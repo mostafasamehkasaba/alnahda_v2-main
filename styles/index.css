@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 html {
@@ -107,7 +107,7 @@ body[dir="rtl"] .swiper-container {
   line-height: 35px;
 }
 
-/* ضبط الاتجاه */
+/* ط¶ط¨ط· ط§ظ„ط§طھط¬ط§ظ‡ */
 html[lang="en"] body {
   direction: ltr;
   text-align: left;
@@ -119,7 +119,7 @@ html[lang="ar"] body {
 
 /* navbar */
 .navbar1 {
-  z-index: 10; /* ��� ������� */
+  z-index: 10; /* فوق الفيديو */
   transition: all 0.35s ease;
   padding: 12px 0;
   background: linear-gradient(
@@ -238,7 +238,7 @@ html[lang="ar"] body {
   left: 0;
 }
 
-/* المحتوى فوق الفيديو */
+/* ط§ظ„ظ…ط­طھظˆظ‰ ظپظˆظ‚ ط§ظ„ظپظٹط¯ظٹظˆ */
 .content {
   z-index: 3;
   position: relative;
@@ -538,12 +538,12 @@ html[lang="ar"] body {
   }
 }
 
-/* خلفية متدرجة */
+/* ط®ظ„ظپظٹط© ظ…طھط¯ط±ط¬ط© */
 .container-fluid.bg-light {
   background: linear-gradient(135deg, #f7f4ee, #ece7df);
 }
 
-/* العنوان */
+/* ط§ظ„ط¹ظ†ظˆط§ظ† */
 .feature-text h1 {
   font-weight: 700;
   color: var(--primary);
@@ -558,13 +558,13 @@ html[lang="ar"] body {
   margin-top: 10px;
 }
 
-/* النص */
+/* ط§ظ„ظ†طµ */
 .feature-text p {
   line-height: 1.8;
   color: var(--muted);
 }
 
-/* صناديق المميزات */
+/* طµظ†ط§ط¯ظٹظ‚ ط§ظ„ظ…ظ…ظٹط²ط§طھ */
 .feature-box {
   background: #fff;
   border-radius: 8px;
@@ -578,7 +578,7 @@ html[lang="ar"] body {
   transform: translateY(-5px);
 }
 
-/* الأيقونات */
+/* ط§ظ„ط£ظٹظ‚ظˆظ†ط§طھ */
 .icon-box {
   width: 60px;
   height: 60px;
@@ -740,8 +740,8 @@ html[lang="ar"] body {
 
 .team-img {
   width: 100%;
-  height: 320px; /* نفس المقاس لكل الصور */
-  object-fit: cover; /* يخلي الصور متناسقة من غير ما تتقطع */
+  height: 320px; /* ظ†ظپط³ ط§ظ„ظ…ظ‚ط§ط³ ظ„ظƒظ„ ط§ظ„طµظˆط± */
+  object-fit: cover; /* ظٹط®ظ„ظٹ ط§ظ„طµظˆط± ظ…طھظ†ط§ط³ظ‚ط© ظ…ظ† ط؛ظٹط± ظ…ط§ طھطھظ‚ط·ط¹ */
   border-radius: 10px;
 }
 
@@ -749,12 +749,12 @@ html[lang="ar"] body {
   background: var(--surface);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* شادو بسيط */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ط´ط§ط¯ظˆ ط¨ط³ظٹط· */
   transition: transform 0.3s ease;
 }
 
 .team-item:hover {
-  transform: translateY(-6px); /* حركة بسيطة عند الـ hover */
+  transform: translateY(-6px); /* ط­ط±ظƒط© ط¨ط³ظٹط·ط© ط¹ظ†ط¯ ط§ظ„ظ€ hover */
 }
 
 .team-item img {
@@ -899,33 +899,33 @@ img {
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(11, 120px); /* ارتفاع كل صف */
-  gap: 15px; /* مسافة واضحة بين الصور */
+  grid-template-rows: repeat(11, 120px); /* ط§ط±طھظپط§ط¹ ظƒظ„ طµظپ */
+  gap: 15px; /* ظ…ط³ط§ظپط© ظˆط§ط¶ط­ط© ط¨ظٹظ† ط§ظ„طµظˆط± */
   margin: 20px auto;
   max-width: 1200px;
 }
 
-/* الصور داخل الجريد */
+/* ط§ظ„طµظˆط± ط¯ط§ط®ظ„ ط§ظ„ط¬ط±ظٹط¯ */
 .parent div {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* شادو يوضح نهاية الصورة */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* ط´ط§ط¯ظˆ ظٹظˆط¶ط­ ظ†ظ‡ط§ظٹط© ط§ظ„طµظˆط±ط© */
 }
 
 .parent div img {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* يخلي الصورة تملأ المساحة بدون تشويه */
+  object-fit: fill; /* ظٹط®ظ„ظٹ ط§ظ„طµظˆط±ط© طھظ…ظ„ط£ ط§ظ„ظ…ط³ط§ط­ط© ط¨ط¯ظˆظ† طھط´ظˆظٹظ‡ */
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .parent div img:hover {
-  transform: scale(1.05); /* تكبير بسيط عند الـ hover */
+  transform: scale(1.05); /* طھظƒط¨ظٹط± ط¨ط³ظٹط· ط¹ظ†ط¯ ط§ظ„ظ€ hover */
 }
 
-/* توزيع العناصر */
+/* طھظˆط²ظٹط¹ ط§ظ„ط¹ظ†ط§طµط± */
 .div1 {
   grid-column: span 2;
   grid-row: span 4;
@@ -971,7 +971,7 @@ img {
   grid-row: 10 / span 2;
 }
 
-/* ✅ Responsive Design */
+/* âœ… Responsive Design */
 @media (max-width: 992px) {
   .parent {
     grid-template-columns: repeat(3, 1fr);
@@ -1016,7 +1016,7 @@ img {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 }
 
-/* ✅ Responsive tweaks */
+/* âœ… Responsive tweaks */
 @media (max-width: 992px) {
   .gallery {
     padding: 30px 10px;
@@ -1170,38 +1170,38 @@ img {
 }
 
 .Wooden_image {
-  background-image: url(imgs/wood/floor-1256804_1280.jpg);
+  background-image: url(../imgs/wood/floor-1256804_1280.jpg);
 }
 
 .About_image {
-  background-image: url(imgs/about/cover.jpg);
+  background-image: url(../imgs/about/cover.jpg);
 }
 
 .contact_image {
-  background-image: url(imgs/about/cover.jpg);
+  background-image: url(../imgs/about/cover.jpg);
 }
 
 .finishes_image {
-  background-image: url(imgs/finishes/finishes-background.jpeg);
+  background-image: url(../imgs/finishes/finishes-background.jpeg);
 }
  
 .genral_image{
 
-  background-image: url(imgs/contracting/11.jpeg);
+  background-image: url(../imgs/contracting/11.jpeg);
 }
 
 .labs_image{
 
-  background-image: url(imgs/labs/laboratory-design.jpg);
+  background-image: url(../imgs/labs/laboratory-design.jpg);
 } 
 
 .other_image{
 
-  background-image: url(imgs/other/pexels-photo-1509428.jpeg);
+  background-image: url(../imgs/other/pexels-photo-1509428.jpeg);
 }
 .raisedfloor{
 
-  background-image: url(imgs/raisedfloor/background.jpg);
+  background-image: url(../imgs/raisedfloor/background.jpg);
 }
 
 
@@ -3534,3 +3534,4 @@ img {
   object-fit: cover;
   display: block;
 }
+
