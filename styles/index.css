@@ -3526,3 +3526,11 @@ img {
 .finishes-video-overlay {
   pointer-events: none;
 }
+.other-section-media video,
+.other-section-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}

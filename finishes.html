@@ -186,23 +186,18 @@
             </div>
             <div class="finishes-intro-modern-media">
               <div class="finishes-video-frame">
-                <video
-                  class="finishes-video"
-                  data-autoplay="in-view"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  preload="metadata"
-                  poster="imgs/finishes/finishes-background.jpeg"
-                  controls
-                >
-                  <source src="vids/finishes.mp4" type="video/mp4" />
-                </video>
+                <img
+                  class="finishes-video lazy-img"
+                  src="imgs/finishes/finishes-background.jpeg"
+                  data-src="imgs/finishes/finishes-background.jpeg"
+                  alt="Finishes highlight"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <div class="finishes-video-overlay">
-                <i class="fa-solid fa-circle-play"></i>
-                <span>Project walkthrough</span>
+                            <div class="finishes-video-overlay">
+                <i class="fa-solid fa-images"></i>
+                <span>Finishes highlight</span>
               </div>
             </div>
           </div>
@@ -576,6 +571,8 @@
     <script src="javascript/main.js"></script>
   </body>
 </html>
+
+
 
 
 
