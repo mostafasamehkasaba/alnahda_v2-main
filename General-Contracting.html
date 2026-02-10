@@ -1,0 +1,754 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-nahda</title>
+
+    <link rel="icon" href="imgs/logo-title.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav id="navEl" class="navbar navbar1 navbar-expand-lg fixed-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <img
+          src="imgs/logo-removebg-preview.png"
+          alt="logo"
+          width="70"
+          height="64"
+          class="d-inline-block align-text-top"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <h1 id="Alnahda" class="m-0"></h1>
+      </a>
+      <button
+        type="button"
+        id="toggler"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse text-end" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto p-4 p-lg-0">
+          <li>
+            <a id="HOME" href="index.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li>
+            <a id="ABOUT" href="about.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="SERVICES"
+              class="nav-link dropdown-toggle lh"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="FINISHES" class="dropdown-item" href="finishes.html"></a>
+              </li>
+              <li class="dropend">
+                <a
+                  id="EXPORTS"
+                  class="dropdown-item dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      id="RAISED"
+                      href="raised-floor.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      id="WOODEN"
+                      href="wooden-work.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a id="LABS" href="labs.html" class="dropdown-item"></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  id="GENREAL"
+                  class="dropdown-item"
+                  href="General-Contracting.html"
+                ></a>
+              </li>
+              <li>
+                <a id="OTHER" class="dropdown-item" href="other-work.html"></a>
+              </li>
+            </ul>
+          </li>
+          <li><button class="Contact-us-btn" id="langBtn">English</button></li>
+          <li>
+            <a id="Contact" href="contact.html" class="nav-item Contact-us-btn"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="contract-hero section">
+      <div class="contract-hero-bg"></div>
+      <div class="container">
+        <div class="contract-hero-grid">
+          <div class="contract-hero-content">
+            <span class="contract-hero-tag">General Contracting</span>
+            <h1 id="General" class="display-5"></h1>
+            <p id="GeneralTitle" class="contract-hero-subtitle"></p>
+            <div class="contract-hero-actions">
+              <a href="#contract-projects" class="Contact-us-btn">View Projects</a>
+              <a href="contact.html" class="Contact-us-btn">Request Quote</a>
+            </div>
+            <div class="contract-hero-metrics">
+              <div class="contract-metric">
+                <span class="contract-metric-number">200+</span>
+                <span class="contract-metric-label">Projects Delivered</span>
+              </div>
+              <div class="contract-metric">
+                <span class="contract-metric-number">15+</span>
+                <span class="contract-metric-label">Years Experience</span>
+              </div>
+              <div class="contract-metric">
+                <span class="contract-metric-number">98%</span>
+                <span class="contract-metric-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div class="contract-hero-card">
+            <img
+              class="lazy-img"
+              src="imgs/contracting/11.jpeg"
+              data-src="imgs/contracting/11.jpeg"
+              alt="General contracting"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="contract-hero-card-body">
+              <h4>End-to-End Delivery</h4>
+              <p>
+                From planning and procurement to execution, we manage complex
+                builds with precision and accountability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="contract-page" id="contract-projects">
+      <section class="contract-section section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2 class="display-5 mb-3">Project Portfolio</h2>
+            <p class="contract-section-desc">
+              Explore large-scale healthcare and public infrastructure projects
+              delivered by Al-Nahda.
+            </p>
+          </div>
+
+          <div class="contract-project-grid">
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Faculty"></h5>
+                <span>Faculty of Dentistry</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 8/7.jpeg"
+                      data-src="imgs/contracting/proj 8/7.jpeg"
+                      alt="Project 8 - 7"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 8/8.jpeg"
+                      data-src="imgs/contracting/proj 8/8.jpeg"
+                      alt="Project 8 - 8"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 8/3.jpeg"
+                      data-src="imgs/contracting/proj 8/3.jpeg"
+                      alt="Project 8 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 8/4.jpeg"
+                      data-src="imgs/contracting/proj 8/4.jpeg"
+                      alt="Project 8 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Outpatient"></h5>
+                <span>Outpatient Clinics</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 7/7.jpeg"
+                      data-src="imgs/contracting/proj 7/7.jpeg"
+                      alt="Project 7 - 7"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 7/2.jpeg"
+                      data-src="imgs/contracting/proj 7/2.jpeg"
+                      alt="Project 7 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 7/3.jpeg"
+                      data-src="imgs/contracting/proj 7/3.jpeg"
+                      alt="Project 7 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 7/4.jpeg"
+                      data-src="imgs/contracting/proj 7/4.jpeg"
+                      alt="Project 7 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="location"></h5>
+                <span>Medical Complex</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 6/7.jpeg"
+                      data-src="imgs/contracting/proj 6/7.jpeg"
+                      alt="Project 6 - 7"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 6/2.jpeg"
+                      data-src="imgs/contracting/proj 6/2.jpeg"
+                      alt="Project 6 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 6/3.jpeg"
+                      data-src="imgs/contracting/proj 6/3.jpeg"
+                      alt="Project 6 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 6/4.jpeg"
+                      data-src="imgs/contracting/proj 6/4.jpeg"
+                      alt="Project 6 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Aqwaz"></h5>
+                <span>Al-Aqwaz Hospital</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 1/Screenshot 2023-09-24 152223.png"
+                      data-src="imgs/contracting/proj 1/Screenshot 2023-09-24 152223.png"
+                      alt="Project 1 - 1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 1/Screenshot 2023-09-24 152233.png"
+                      data-src="imgs/contracting/proj 1/Screenshot 2023-09-24 152233.png"
+                      alt="Project 1 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 1/Screenshot 2023-09-24 152249.png"
+                      data-src="imgs/contracting/proj 1/Screenshot 2023-09-24 152249.png"
+                      alt="Project 1 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 1/Screenshot 2023-09-24 152258.png"
+                      data-src="imgs/contracting/proj 1/Screenshot 2023-09-24 152258.png"
+                      alt="Project 1 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Shawashna"></h5>
+                <span>Shawashna Hospital</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 2/Screenshot 2023-09-24 153813.png"
+                      data-src="imgs/contracting/proj 2/Screenshot 2023-09-24 153813.png"
+                      alt="Project 2 - 1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 2/Screenshot 2023-09-24 153820.png"
+                      data-src="imgs/contracting/proj 2/Screenshot 2023-09-24 153820.png"
+                      alt="Project 2 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 2/Screenshot 2023-09-24 153826.png"
+                      data-src="imgs/contracting/proj 2/Screenshot 2023-09-24 153826.png"
+                      alt="Project 2 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 2/Screenshot 2023-09-24 153836.png"
+                      data-src="imgs/contracting/proj 2/Screenshot 2023-09-24 153836.png"
+                      alt="Project 2 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Kom"></h5>
+                <span>Kom Oshim Hospital</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 3/Screenshot 2023-09-24 154206.png"
+                      data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154206.png"
+                      alt="Project 3 - 1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 3/Screenshot 2023-09-24 154215.png"
+                      data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154215.png"
+                      alt="Project 3 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 3/Screenshot 2023-09-24 154221.png"
+                      data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154221.png"
+                      alt="Project 3 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 3/Screenshot 2023-09-24 154232.png"
+                      data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154232.png"
+                      alt="Project 3 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Qababat"></h5>
+                <span>Al-Qababat Hospital</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 4/Screenshot 2023-09-24 154535.png"
+                      data-src="imgs/contracting/proj 4/Screenshot 2023-09-24 154535.png"
+                      alt="Project 4 - 1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 4/Screenshot 2023-09-24 154545.png"
+                      data-src="imgs/contracting/proj 4/Screenshot 2023-09-24 154545.png"
+                      alt="Project 4 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 4/Screenshot 2023-09-24 154555.png"
+                      data-src="imgs/contracting/proj 4/Screenshot 2023-09-24 154555.png"
+                      alt="Project 4 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 4/Screenshot 2023-09-24 154602.png"
+                      data-src="imgs/contracting/proj 4/Screenshot 2023-09-24 154602.png"
+                      alt="Project 4 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="contract-project-card">
+              <div class="contract-project-header">
+                <h5 id="Matatros"></h5>
+                <span>Matatros Hospital</span>
+              </div>
+              <div class="contract-project-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 5/Screenshot 2023-09-24 155138.png"
+                      data-src="imgs/contracting/proj 5/Screenshot 2023-09-24 155138.png"
+                      alt="Project 5 - 1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 5/Screenshot 2023-09-24 155143.png"
+                      data-src="imgs/contracting/proj 5/Screenshot 2023-09-24 155143.png"
+                      alt="Project 5 - 2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 5/Screenshot 2023-09-24 155148.png"
+                      data-src="imgs/contracting/proj 5/Screenshot 2023-09-24 155148.png"
+                      alt="Project 5 - 3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="gallery-item lazy-img"
+                      src="imgs/contracting/proj 5/Screenshot 2023-09-24 155155.png"
+                      data-src="imgs/contracting/proj 5/Screenshot 2023-09-24 155155.png"
+                      alt="Project 5 - 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="imgs/logo-removebg-preview.png"
+              class="modal-img"
+              alt="modal img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="FooterSection"
+      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn section"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterAddressTitle" class="text-light mb-4">Address</h4>
+            <p id="FooterAddress" class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i> Shebin El-Kom, Menoufia
+            </p>
+            <p id="FooterPhone" class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i> +201097117225
+            </p>
+            <p id="FooterEmail" class="mb-2">
+              <i class="fa fa-envelope me-3"></i> info@alnahda.info
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=61551346292977"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/elnahda842/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterServicesTitle" class="text-light mb-4">Services</h4>
+            <a id="FooterFinishes" class="btn btn-link" href="finishes.html"
+              >Finishes</a
+            >
+            <a id="FooterRaised" class="btn btn-link" href="raised-floor.html"
+              >Raised Floors</a
+            >
+            <a id="FooterWooden" class="btn btn-link" href="wooden-work.html"
+              >Wooden Work</a
+            >
+            <a id="FooterLabs" class="btn btn-link" href="labs.html">Labs</a>
+            <a
+              id="FooterContract"
+              class="btn btn-link"
+              href="General-Contracting.html"
+              >General Contracting</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterLinksTitle" class="text-light mb-4">Quick Links</h4>
+            <a id="FooterHome" class="btn btn-link" href="index.html">Home</a>
+            <a id="FooterAbout" class="btn btn-link" href="about.html">About</a>
+            <a id="FooterContact" class="btn btn-link" href="contact.html"
+              >Contact</a
+            >
+            <a id="FooterOther" class="btn btn-link" href="other-work.html"
+              >Other Work</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="d-inline-block align-text-top lazy-img"
+              data-src="imgs/logo-removebg-preview.png"
+              alt=""
+              width="190"
+              height="184"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <span id="FooterCopy">(c) www.alnahda.info, All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a id="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".section", {
+        duration: 2200,
+        origin: "bottom",
+        distance: "80px",
+        reset: false,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

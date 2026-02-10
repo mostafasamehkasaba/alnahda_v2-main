@@ -1,0 +1,554 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-nahda</title>
+
+    <link rel="icon" href="imgs/logo-title.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav id="navEl" class="navbar navbar1 navbar-expand-lg fixed-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <img
+          src="imgs/logo-removebg-preview.png"
+          alt="logo"
+          width="70"
+          height="64"
+          class="d-inline-block align-text-top"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <h1 id="Alnahda" class="m-0"></h1>
+      </a>
+      <button
+        type="button"
+        id="toggler"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse text-end" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto p-4 p-lg-0">
+          <li>
+            <a id="HOME" href="index.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li>
+            <a id="ABOUT" href="about.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="SERVICES"
+              class="nav-link dropdown-toggle lh"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="FINISHES" class="dropdown-item" href="finishes.html"></a>
+              </li>
+              <li class="dropend">
+                <a
+                  id="EXPORTS"
+                  class="dropdown-item dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      id="RAISED"
+                      href="raised-floor.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      id="WOODEN"
+                      href="wooden-work.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a id="LABS" href="labs.html" class="dropdown-item"></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  id="GENREAL"
+                  class="dropdown-item"
+                  href="General-Contracting.html"
+                ></a>
+              </li>
+              <li>
+                <a id="OTHER" class="dropdown-item" href="other-work.html"></a>
+              </li>
+            </ul>
+          </li>
+          <li><button class="Contact-us-btn" id="langBtn">English</button></li>
+          <li>
+            <a id="Contact" href="contact.html" class="nav-item Contact-us-btn"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="other-hero section">
+      <div class="other-hero-bg"></div>
+      <div class="container">
+        <div class="other-hero-grid">
+          <div class="other-hero-content">
+            <span class="other-hero-tag">Specialized Works</span>
+            <h1 id="ServicesT" class="display-5"></h1>
+            <p class="other-hero-subtitle">
+              Custom marble, lighting accents, and detailed finishes tailored to
+              each project.
+            </p>
+            <div class="other-hero-actions">
+              <a href="#marble" class="Contact-us-btn">Marble</a>
+              <a href="#other-gallery" class="Contact-us-btn">View Gallery</a>
+            </div>
+          </div>
+          <div class="other-hero-card">
+            <img
+              class="lazy-img"
+              src="imgs/other/pexels-photo-1509428.jpeg"
+              data-src="imgs/other/pexels-photo-1509428.jpeg"
+              alt="Other works"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="other-hero-card-body">
+              <h4>Crafted Details</h4>
+              <p>
+                We blend precision, finish quality, and tailored materials for
+                spaces that feel premium and cohesive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="other-page">
+      <section id="marble" class="other-section section">
+        <div class="container">
+          <div class="other-section-grid">
+            <div class="other-section-media">
+              <video autoplay loop muted playsinline>
+                <source
+                  src="vids/Untitled video - Made with Clipchamp (2).mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="other-media-badge">Marble Craftsmanship</div>
+            </div>
+            <div class="other-section-text">
+              <div class="section-title text-start">
+                <h2 id="Marble" class="display-5 mb-3"></h2>
+              </div>
+              <p id="MatatrosTitle" class="other-section-desc"></p>
+              <div class="other-pill-row">
+                <span class="other-pill">Premium Marble</span>
+                <span class="other-pill">Custom Edge Profiles</span>
+                <span class="other-pill">Luxury Finishes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="other-gallery-grid">
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0077.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0077.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0081.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0081.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0090.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0090.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0092.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0092.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0097.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0097.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/other/marble/IMG-20230920-WA0100.jpg"
+              data-src="imgs/other/marble/IMG-20230920-WA0100.jpg"
+              alt="gallery"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="other-section other-lighting section">
+        <div class="container">
+          <div class="other-section-grid">
+            <div class="other-section-text">
+              <div class="section-title text-start">
+                <h2 id="Lumi" class="display-5 mb-3"></h2>
+              </div>
+              <p id="LumiTitle" class="other-section-desc"></p>
+            </div>
+            <div class="other-compare">
+              <div class="other-compare-card">
+                <img
+                  class="lazy-img"
+                  src="imgs/other/marble/light-off.jpg"
+                  data-src="imgs/other/marble/light-off.jpg"
+                  alt="Light off"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5 id="off"></h5>
+              </div>
+              <div class="other-compare-card">
+                <img
+                  class="lazy-img"
+                  src="imgs/other/marble/light-on.jpg"
+                  data-src="imgs/other/marble/light-on.jpg"
+                  alt="Light on"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5 id="on"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="other-gallery" class="other-gallery section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2 id="Other" class="display-5 mb-3"></h2>
+            <p class="other-section-desc">
+              A selection of custom interiors, hospitality, and bespoke fit-outs.
+            </p>
+            <div class="tran"></div>
+          </div>
+
+          <div class="other-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (1).jpeg"
+                  data-src="imgs/other/rest/1 (1).jpeg"
+                  alt="Gallery 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (2).jpeg"
+                  data-src="imgs/other/rest/1 (2).jpeg"
+                  alt="Gallery 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (3).jpeg"
+                  data-src="imgs/other/rest/1 (3).jpeg"
+                  alt="Gallery 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (4).jpeg"
+                  data-src="imgs/other/rest/1 (4).jpeg"
+                  alt="Gallery 4"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (5).jpeg"
+                  data-src="imgs/other/rest/1 (5).jpeg"
+                  alt="Gallery 5"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (6).jpeg"
+                  data-src="imgs/other/rest/1 (6).jpeg"
+                  alt="Gallery 6"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (7).jpeg"
+                  data-src="imgs/other/rest/1 (7).jpeg"
+                  alt="Gallery 7"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (8).jpeg"
+                  data-src="imgs/other/rest/1 (8).jpeg"
+                  alt="Gallery 8"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (9).jpeg"
+                  data-src="imgs/other/rest/1 (9).jpeg"
+                  alt="Gallery 9"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (10).jpeg"
+                  data-src="imgs/other/rest/1 (10).jpeg"
+                  alt="Gallery 10"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (11).jpeg"
+                  data-src="imgs/other/rest/1 (11).jpeg"
+                  alt="Gallery 11"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/other/rest/1 (12).jpeg"
+                  data-src="imgs/other/rest/1 (12).jpeg"
+                  alt="Gallery 12"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="imgs/logo-removebg-preview.png"
+              class="modal-img"
+              alt="modal img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="FooterSection"
+      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn section"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterAddressTitle" class="text-light mb-4">Address</h4>
+            <p id="FooterAddress" class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i> Shebin El-Kom, Menoufia
+            </p>
+            <p id="FooterPhone" class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i> +201097117225
+            </p>
+            <p id="FooterEmail" class="mb-2">
+              <i class="fa fa-envelope me-3"></i> info@alnahda.info
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=61551346292977"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/elnahda842/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterServicesTitle" class="text-light mb-4">Services</h4>
+            <a id="FooterFinishes" class="btn btn-link" href="finishes.html"
+              >Finishes</a
+            >
+            <a id="FooterRaised" class="btn btn-link" href="raised-floor.html"
+              >Raised Floors</a
+            >
+            <a id="FooterWooden" class="btn btn-link" href="wooden-work.html"
+              >Wooden Work</a
+            >
+            <a id="FooterLabs" class="btn btn-link" href="labs.html">Labs</a>
+            <a
+              id="FooterContract"
+              class="btn btn-link"
+              href="General-Contracting.html"
+              >General Contracting</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterLinksTitle" class="text-light mb-4">Quick Links</h4>
+            <a id="FooterHome" class="btn btn-link" href="index.html">Home</a>
+            <a id="FooterAbout" class="btn btn-link" href="about.html">About</a>
+            <a id="FooterContact" class="btn btn-link" href="contact.html"
+              >Contact</a
+            >
+            <a id="FooterOther" class="btn btn-link" href="other-work.html"
+              >Other Work</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="d-inline-block align-text-top lazy-img"
+              data-src="imgs/logo-removebg-preview.png"
+              alt=""
+              width="190"
+              height="184"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <span id="FooterCopy">(c) www.alnahda.info, All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a id="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".section", {
+        duration: 2200,
+        origin: "bottom",
+        distance: "80px",
+        reset: false,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

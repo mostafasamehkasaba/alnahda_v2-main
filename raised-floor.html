@@ -1,0 +1,523 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-nahda</title>
+
+    <link rel="icon" href="imgs/logo-title.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav id="navEl" class="navbar navbar1 navbar-expand-lg fixed-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <img
+          src="imgs/logo-removebg-preview.png"
+          alt="logo"
+          width="70"
+          height="64"
+          class="d-inline-block align-text-top"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <h1 id="Alnahda" class="m-0"></h1>
+      </a>
+      <button
+        type="button"
+        id="toggler"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse text-end" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto p-4 p-lg-0">
+          <li>
+            <a id="HOME" href="index.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li>
+            <a id="ABOUT" href="about.html" class="nav-item nav-link lh"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="SERVICES"
+              class="nav-link dropdown-toggle lh"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="FINISHES" class="dropdown-item" href="finishes.html"></a>
+              </li>
+              <li class="dropend">
+                <a
+                  id="EXPORTS"
+                  class="dropdown-item dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      id="RAISED"
+                      href="raised-floor.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      id="WOODEN"
+                      href="wooden-work.html"
+                      class="dropdown-item"
+                    ></a>
+                  </li>
+                  <li>
+                    <a id="LABS" href="labs.html" class="dropdown-item"></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  id="GENREAL"
+                  class="dropdown-item"
+                  href="General-Contracting.html"
+                ></a>
+              </li>
+              <li>
+                <a id="OTHER" class="dropdown-item" href="other-work.html"></a>
+              </li>
+            </ul>
+          </li>
+          <li><button class="Contact-us-btn" id="langBtn">English</button></li>
+          <li>
+            <a id="Contact" href="contact.html" class="nav-item Contact-us-btn"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="raised-hero section">
+      <div class="raised-hero-bg"></div>
+      <div class="container">
+        <div class="raised-hero-grid">
+          <div class="raised-hero-content">
+            <span class="raised-hero-tag">Raised Flooring</span>
+            <h1 id="RaisedFloors" class="display-5"></h1>
+            <p id="FloorsTitle" class="raised-hero-subtitle"></p>
+            <div class="raised-hero-actions">
+              <a href="#raised-gallery" class="Contact-us-btn">View Gallery</a>
+              <a href="contact.html" class="Contact-us-btn">Request Quote</a>
+            </div>
+            <div class="raised-hero-metrics">
+              <div class="raised-metric">
+                <span class="raised-metric-number">12+</span>
+                <span class="raised-metric-label">Years Experience</span>
+              </div>
+              <div class="raised-metric">
+                <span class="raised-metric-number">90+</span>
+                <span class="raised-metric-label">Sites Delivered</span>
+              </div>
+              <div class="raised-metric">
+                <span class="raised-metric-number">24/7</span>
+                <span class="raised-metric-label">Support Coverage</span>
+              </div>
+            </div>
+          </div>
+          <div class="raised-hero-card">
+            <img
+              class="lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+              alt="Raised floor overview"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="raised-hero-card-body">
+              <h4>Flexible Infrastructure</h4>
+              <p>
+                Adaptable flooring systems for data centers, labs, and offices
+                with fast cable access and maintenance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="raised-page">
+      <section class="raised-section section">
+        <div class="container">
+          <div class="raised-section-grid">
+            <div class="raised-section-text">
+              <div class="section-title text-start">
+                <h2 id="Floors" class="display-5 mb-3"></h2>
+              </div>
+              <p class="raised-section-desc">
+                Our raised floor systems are engineered for strength, airflow,
+                and easy maintenance. We plan layouts to optimize access panels,
+                underfloor services, and long-term performance.
+              </p>
+              <div class="raised-feature-list">
+                <div class="raised-feature">
+                  <i class="fa-solid fa-wind"></i>
+                  <span>Optimized airflow circulation</span>
+                </div>
+                <div class="raised-feature">
+                  <i class="fa-solid fa-cubes"></i>
+                  <span>Heavy-duty load capacity</span>
+                </div>
+                <div class="raised-feature">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <span>Fast maintenance access</span>
+                </div>
+              </div>
+            </div>
+            <div class="raised-section-media">
+              <img
+                class="lazy-img"
+                src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                data-src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                alt="Raised floor details"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="raised-media-badge">
+                <span>Engineered for efficiency</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="raised-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+                  alt="Raised floor 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                  alt="Raised floor 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA001.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA001.jpg"
+                  alt="Raised floor 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA004.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA004.jpg"
+                  alt="Raised floor 4"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA002.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA002.jpg"
+                  alt="Raised floor 5"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA007.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA007.jpg"
+                  alt="Raised floor 6"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA006.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA006.jpg"
+                  alt="Raised floor 7"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-item lazy-img"
+                  src="imgs/raisedfloor/IMG-20230920-WA008.jpg"
+                  data-src="imgs/raisedfloor/IMG-20230920-WA008.jpg"
+                  alt="Raised floor 8"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="raised-gallery" class="raised-gallery section">
+        <div class="container">
+          <div class="section-title text-start">
+            <h2 class="display-5 mb-3">Installation Gallery</h2>
+            <p class="raised-section-desc">
+              Explore installation details, airflow grilles, and access panels
+              across recent projects.
+            </p>
+          </div>
+          <div class="raised-gallery-grid">
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA003.jpg"
+              alt="gallery 1"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+              alt="gallery 2"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA001.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA001.jpg"
+              alt="gallery 3"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA004.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA004.jpg"
+              alt="gallery 4"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA002.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA002.jpg"
+              alt="gallery 5"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA007.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA007.jpg"
+              alt="gallery 6"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA006.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA006.jpg"
+              alt="gallery 7"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="gallery-item lazy-img"
+              src="imgs/raisedfloor/IMG-20230920-WA008.jpg"
+              data-src="imgs/raisedfloor/IMG-20230920-WA008.jpg"
+              alt="gallery 8"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="imgs/logo-removebg-preview.png"
+              class="modal-img"
+              alt="modal img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="FooterSection"
+      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn section"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterAddressTitle" class="text-light mb-4">Address</h4>
+            <p id="FooterAddress" class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i> Shebin El-Kom, Menoufia
+            </p>
+            <p id="FooterPhone" class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i> +201097117225
+            </p>
+            <p id="FooterEmail" class="mb-2">
+              <i class="fa fa-envelope me-3"></i> info@alnahda.info
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=61551346292977"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/elnahda842/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterServicesTitle" class="text-light mb-4">Services</h4>
+            <a id="FooterFinishes" class="btn btn-link" href="finishes.html"
+              >Finishes</a
+            >
+            <a id="FooterRaised" class="btn btn-link" href="raised-floor.html"
+              >Raised Floors</a
+            >
+            <a id="FooterWooden" class="btn btn-link" href="wooden-work.html"
+              >Wooden Work</a
+            >
+            <a id="FooterLabs" class="btn btn-link" href="labs.html">Labs</a>
+            <a
+              id="FooterContract"
+              class="btn btn-link"
+              href="General-Contracting.html"
+              >General Contracting</a
+            >
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 id="FooterLinksTitle" class="text-light mb-4">Quick Links</h4>
+            <a id="FooterHome" class="btn btn-link" href="index.html">Home</a>
+            <a id="FooterAbout" class="btn btn-link" href="about.html">About</a>
+            <a id="FooterContact" class="btn btn-link" href="contact.html"
+              >Contact</a
+            >
+            <a id="FooterOther" class="btn btn-link" href="other-work.html"
+              >Other Work</a
+            >
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="d-inline-block align-text-top lazy-img"
+              data-src="imgs/logo-removebg-preview.png"
+              alt=""
+              width="190"
+              height="184"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <span id="FooterCopy">(c) www.alnahda.info, All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a id="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".section", {
+        duration: 2200,
+        origin: "bottom",
+        distance: "80px",
+        reset: false,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+{
+  "ar": {
+    "button": "English 🇬🇧",
+    "Alnahda": "النهضة",
+    "HOME": "الرئيسية |",
+    "Alnahdaa": "النهضة",
+    "ABOUT": "نبذة عنا |",
+    "ABOUTS": "نبذة عنا ",
+    "SERVICES": "خدماتنا |",
+    "FINISHES": "التشطيبات",
+    "EXPORTS": "الصادرات |",
+    "RAISED": "الأرضيات المرتفعة",
+    "WOODEN": "الأعمال الخشبية",
+    "LABS": "المعامل",
+    "GENREAL": "المقاولات العامة",
+    "OTHER": "أعمال أخرى",
+    "Contact": "اتصل بنا",
+    "ContactUs": "اتصل بنا",
+    "WelcomeTo": "مرحباً بك في",
+    "WelcomeDe": "نقدّم الجودة والابتكار والتميز في كل مشروع",
+    "AboutTitle": "نبذة عنا",
+    "AboutDesc": "خبرتنا متنوعة وتشمل مجموعة واسعة من مجالات صناعة البناء والخدمات المرتبطة بها، بما في ذلك: المباني العامة، الجسور، الطرق، الأنفاق، المطارات، الإسكان، مشاريع المياه والصرف الصحي، محطات معالجة مياه الصرف، محطات الطاقة، السدود، المستشفيات، المباني الرياضية، ترميم الآثار، الري، إنتاج الخرسانة الجاهزة، بناء السفن، المشاريع الكهروميكانيكية، الاستشارات الهندسية، تصنيع وتجميع الهياكل الفولاذية وغيرها.",
+    "AboutDetails": "تفاصيل",
+    "AboutContact": "اتصل بنا",
+    "ServicesTitle": "خدماتنا",
+    "ServiceFinishesTitle": "التشطيبات",
+    "ServiceFinishesDesc": "تصاميم عصرية وحديثة بأفضل جودة في السوق.",
+    "ServiceFinishesLink": "تفاصيل",
+    "ServiceRaisedTitle": "الأرضيات المرتفعة",
+    "ServiceRaisedDesc": "حل عملي ومرن للمساحات الإنشائية.",
+    "ServiceRaisedLink": "تفاصيل",
+    "ServiceWoodTitle": "الأعمال الخشبية",
+    "ServiceWoodDesc": "أبواب خشبية وأعمال خشبية متنوعة.",
+    "ServiceWoodLink": "تفاصيل",
+    "ServiceLabsTitle": "المعامل",
+    "ServiceLabsLink": "تفاصيل",
+    "ServiceContractTitle": "المقاولات العامة",
+    "ServiceContractLink": "تفاصيل",
+    "ServiceMarbleTitle": "الرخام",
+    "ServiceMarbleLink": "تفاصيل",
+
+    "FeatureTitle": "لماذا تختارنا",
+    "FeatureDesc": "نحن فريق من المحترفين ذوي الخبرة والمؤهلين، شغوفون بعملنا ونملك سجلًا حافلًا بالنجاح في تنفيذ المشاريع بجودة عالية وفي الوقت المحدد وضمن الميزانية...",
+    "FeatureCreative": "مبدعون",
+    "FeatureDesigners": "مصممون",
+    "FeatureFree": "مجانية",
+    "FeatureConsultation": "استشارة",
+    "FeatureWork": "العمل",
+    "FeatureOnTime": "منجز في الوقت المحدد",
+    "FeatureCustomer": "خدمة",
+    "FeatureSupport": "العملاء",
+    "ProjectsTitle": "أعمال أخرى",
+    "Project1Category": "رخام",
+    "Project1Title": "حجر لومي",
+    "Project2Category": "تشطيبات",
+    "Project2Title": "مكاتب",
+    "Project3Category": "تشطيبات",
+    "Project3Title": "حمامات",
+    "ProjectMore": "عرض المزيد",
+    "TeamTitle": "فريقنا",
+    "TeamMember1Name": "د. أمجد البحيري",
+    "TeamMember2Name": "لؤى مصطفى كمال السيد علي",
+    "TeamMember3Name": "م. أحمد سعيد",
+    "FooterAddressTitle": "العنوان",
+    "FooterAddress": "برج الأحلام، شارع عاطف السادات، شبين الكوم، المنوفية",
+    "FooterPhone": "+201097117225",
+    "FooterEmail": "amgad.abdelmohsen@eng.mti.edu.eg",
+    "FooterServicesTitle": "خدماتنا",
+    "FooterFinishes": "التشطيبات",
+    "FooterRaised": "الأرضيات المرتفعة",
+    "FooterWooden": "الأعمال الخشبية",
+    "FooterLabs": "المعامل",
+    "FooterContract": "المقاولات العامة",
+    "FooterLinksTitle": "روابط سريعة",
+    "FooterHome": "الرئيسية",
+    "FooterAbout": "نبذة عنا",
+    "FooterContact": "اتصل بنا",
+    "FooterOther": "أعمال أخرى",
+    "FooterCopy": "© www.alnahda.info، جميع الحقوق محفوظة.",
+    "PageAboutDE": "رؤيتنا هي أن نكون أعلى قيمة مزود للخدمات العالمية في البناء والخبرة التقنية.",
+    "PageAboutH": "نبذة عنا",
+    "Finishes": "التشطيبات",
+    "FinishesTitle": "التشطيبات",
+    "PageFinishesTitle": "اختيار أفضل المواد لمنزلك — بجانب الطلاء والكسوة، هناك تشطيبات داخلية أخرى يمكن أن تعزز مظهر ووظيفة منزلك.",
+    "PageFinishesDesc": "إذا كنت تبحث عن أفضل التشطيبات لمنزلك، فأنت في المكان المناسب. نحن نقدم مجموعة واسعة من المواد عالية الجودة التي تناسب تفضيلاتك التصميمية ومتطلباتك الوظيفية. سواء كنت ترغب في طلاء الجدران الداخلية، اختيار مادة كسوة للجدران الخارجية، أو تركيب البلاط، منتجات الأرضيات أو مواد الأسطح في غرفك، لدينا الحل الأمثل لك. تشطيباتنا متينة، سهلة الصيانة وجذابة بصريًا. تواصل معنا اليوم ودعنا نساعدك في تحويل منزلك إلى بيت أحلامك.",
+
+    "Floors": "الأرضيات",
+    "RaisedFloors": "الأرضيات المرتفعة",
+    "FloorsTitle": "حل عملي ومرن للمساحات الإنشائية: الأرضية المرتفعة هي نظام يُنشئ أرضية إضافية فوق البلاطة الخرسانية الأصلية، مما يسمح بتركيب وتوزيع مختلف الخدمات التقنية مثل الأسلاك.",
+
+    "WoodenWork": "الأعمال الخشبية",
+    "WoodenWorkTitle": "أعمال خشبية مخصصة لمنزلك أو عملك",
+    "Woodendoors": "الأبواب الخشبية",
+    "Woodenbindings": "التشطيبات الخشبية",
+
+    "Labs": "المعامل",
+    "Lab": "المعامل",
+    "LabTitle": "تواصل معنا اليوم لتتعرف أكثر على خدمات تصميم وبناء المعامل الخاصة بنا",
+
+    "General": "المقاولات العامة",
+    "GeneralTitle": "تطوير كلية الطب",
+    "Faculty": "كلية طب الأسنان",
+    "Outpatient": "العيادات الخارجية",
+    "location": "الموقع العام للمجمع الطبي",
+    "Aqwaz": "مستشفى العُقواز - محافظة الجيزة",
+    "Shawashna": "مستشفى الشواشنة - محافظة الفيوم",
+    "Kom": "مستشفى كوم أوشيم - محافظة الفيوم",
+    "Qababat": "مستشفى القبّابات - محافظة الجيزة",
+    "Matatros": "مستشفى مطاطرس - محافظة الفيوم",
+    "ServicesT": "خدمات أخرى",
+    "Marble": "الرخام",
+    "MatatrosTitle": "إذا كنت تبحث عن مادة تضيف لمسة من الفخامة والرقي إلى منزلك، فإن الرخام هو الخيار الأمثل. أسطح الرخام، الأرضيات، والديكورات الخلفية كلها خيارات شائعة يمكنها أن ترفع مظهر أي مساحة فورًا. كما أن الرخام خيار رائع للتطبيقات الخارجية مثل الباحات، الممرات، والنوافير.",
+    "Lumi": "حجر لومي",
+    "LumiTitle": "حجر لومي هو نوع من الأحجار الفوتولومينسنت (المضيئة في الظلام) تم تطويره بواسطة شركة Best Time (Lumi-Stone). وهو حجر صناعي مصنوع من مزيج من الحجر الطبيعي والأصباغ الفوتولومينسنت. يتميز حجر لومي بأنه يضيء في الظلام ويمكن استخدامه في مجموعة متنوعة من التطبيقات.",
+    "off": "إضاءة مطفأة",
+    "on": "إضاءة مشتعلة",
+    "Other": "أعمال أخرى"
+  },
+  "en": {
+    "button": "عربي 🇪🇬",
+    "Alnahda": "Alnahda",
+    "Alnahdaa": "Alnahda",
+    "HOME": "HOME |",
+    "ABOUT": "ABOUT US |",
+    "ABOUTS": "ABOUT US ",
+    "SERVICES": "OUR SERVICES |",
+    "FINISHES": "FINISHES",
+    "EXPORTS": "EXPORTS |",
+    "RAISED": "RAISED FLOORS",
+    "WOODEN": "WOODEN WORK",
+    "LABS": "LABS",
+    "GENREAL": "GENERAL CONTRACTING",
+    "OTHER": "OTHER WORK",
+    "Contact": "Contact Us",
+    "ContactUs": "Contact Us",
+    "WelcomeTo": "Welcome to",
+    "WelcomeDe": "We deliver quality, innovation and excellence in every project",
+
+    "AboutTitle": "About Us",
+    "AboutDesc": "Our experience is widely diversified and covers a wide spectrum of the construction industry and its ancillary services including: Public buildings, bridges, roads, tunnels, airports, housing, water & sewage projects, wastewater treatment plants, power stations, dams, hospitals, sports buildings, restoration of monuments, irrigation, producing ready-mix concrete, shipbuilding, electromechanical projects, engineering consultancy, manufacturing and assembly of steel structures,…etc",
+    "AboutDetails": "Details",
+    "AboutContact": "Contact Us",
+
+    "ServicesTitle": "Our Services",
+    "ServiceFinishesTitle": "Finishes",
+    "ServiceFinishesDesc": "Contemporary and modern designs with the best quality on the market.",
+    "ServiceFinishesLink": "Details",
+    "ServiceRaisedTitle": "Raised Floors",
+    "ServiceRaisedDesc": "A modular and practical solution for building spaces.",
+    "ServiceRaisedLink": "Details",
+    "ServiceWoodTitle": "Wooden Craft",
+    "ServiceWoodDesc": "Wooden doors & wooden bindings.",
+    "ServiceWoodLink": "Details",
+    "ServiceLabsTitle": "Labs",
+    "ServiceLabsLink": "Details",
+    "ServiceContractTitle": "General Contracting",
+    "ServiceContractLink": "Details",
+    "ServiceMarbleTitle": "Marble",
+    "ServiceMarbleLink": "Details",
+    "FeatureTitle": "Why Choose Us",
+    "FeatureDesc": "We are a team of experienced and qualified professionals who are passionate about our work. We have a proven track record of success in delivering high-quality projects on time and within budget...",
+    "FeatureCreative": "Creative",
+    "FeatureDesigners": "Designers",
+    "FeatureFree": "Free",
+    "FeatureConsultation": "Consultation",
+    "FeatureWork": "Work",
+    "FeatureOnTime": "Done on time",
+    "FeatureCustomer": "Customer",
+    "FeatureSupport": "Support",
+    "ProjectsTitle": "Other Work",
+    "Project1Category": "Marble",
+    "Project1Title": "Lumi Stone",
+    "Project2Category": "Finishes",
+    "Project2Title": "Offices",
+    "Project3Category": "Finishes",
+    "Project3Title": "Bathrooms",
+    "ProjectMore": "View More",
+    "TeamTitle": "Our Team",
+    "TeamMember1Name": "Dr. Amgad Elbhiery",
+    "TeamMember2Name": "Lewa Mostafa Kamal Elsayed Ali",
+    "TeamMember3Name": "Eng. Ahmed Saeed",
+    "FooterAddressTitle": "Address",
+    "FooterAddress": "Borj Alahlam, Atef Sadat Street, Shebin El-Koum, Menoufia",
+    "FooterPhone": "+201097117225",
+    "FooterEmail": "amgad.abdelmohsen@eng.mti.edu.eg",
+    "FooterServicesTitle": "Our Services",
+    "FooterFinishes": "Finishes",
+    "FooterRaised": "Raised Floors",
+    "FooterWooden": "Wooden Work",
+    "FooterLabs": "Labs",
+    "FooterContract": "General Contracting",
+    "FooterLinksTitle": "Fast Links",
+    "FooterHome": "Home",
+    "FooterAbout": "About Us",
+    "FooterContact": "Contact Us",
+    "FooterOther": "Other Work",
+    "FooterCopy": "© www.alnahda.info, All Rights Reserved.",
+    "PageAboutDE": "   Our vision is to be the highest value provider of global construction services and technical expertise.",
+    "PageAboutH": "ABOUT US",
+
+    "Finishes": "Finishes",
+    "FinishesTitle": "Finishes",
+    "PageFinishesTitle": "Choosing the Best Materials for Your Home Besides paint and siding, there are other interior finishes that can enhance your home's appearance and function.",
+    "PageFinishesDesc": "If you are looking for the best finishes for your home, you have come to the right place. We offer a wide range of high-quality materials that can suit your design preferences and functional requirements. Whether you want to paint your interior walls, choose a siding material for your exterior walls, or install tiles, flooring products or surface materials in your rooms, we have the perfect solution for you. Our finishes are durable, easy to maintain and visually appealing. Contact us today and let us help you turn your house into your dream home.",
+    "Floors": "Floors",
+
+    "RaisedFloors": "Raised Floors",
+    "FloorsTitle": "A modular and practical solution for building spaces: Raised floor is a system that creates a raised floor above the original concrete slab, allowing the installation and distribution of various technical services such as wiring.",
+    "WoodenWork": "Wooden Work",
+    "WoodenWorkTitle": "Custom Woodworking for Your Home or Business",
+    "Woodendoors": "Wooden doors",
+    "Woodenbindings ": "Wooden bindings ",
+
+    "Labs": "Labs",
+    "Lab": "Lab",
+    "LabTitle": "Contact Us Today to Learn More About Our Lab Design and Construction Services",
+
+    "General": "General Contracting",
+    "GeneralTitle": "Upgrading the Faculty of Medicine",
+    "Faculty": "Faculty of Dentistry",
+    "Outpatient": "Outpatient clinics",
+    "location": "The general location of the medical complex",
+    "Aqwaz": "Al-Aqwaz Hospital - Giza Governorate",
+    "Shawashna": "Shawashna Hospital - Fayoum Governorate",
+    "Kom": "Kom Oshim Hospital - Fayoum Governorate ",
+    "Qababat": "Al-Qababat Hospital - Giza Governorate ",
+    "Matatros": " Matatros Hospital - Fayoum Governorate  ",
+
+    "ServicesT": "Other Services ",
+    "Marble": "Marble ",
+    "MatatrosTitle": "If you are looking for a material that will add a touch of luxury and sophistication to your home, marble is the perfect choice. Marble countertops, flooring, and backsplashes are all popular options that can instantly elevate the look of any space. Marble is also a great choice for outdoor applications, such as patios, walkways, and fountains. ",
+    "Lumi": "Lumi Stone",
+    "LumiTitle": "    Lumi Stone is a type of photoluminescent stone that is developed by Best Time (Lumi-Stone). It is a synthetic stone that is made from a combination of natural stone and photoluminescent pigments. Lumi Stone is glow-in-the-dark, and it can be used for a variety of applications",
+
+    "off": "light-off ",
+    "on": "light-on ",
+    "Other": "Other work  "
+  }
+}
