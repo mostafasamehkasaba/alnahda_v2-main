@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al-nahda</title>
+    <!-- the websit icon -->
     <link rel="icon" href="imgs/logo-title.png" type="image/x-icon" />
 
+    <!-- font awesome icon pack -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <!-- bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
-      rel="stylesheet"
-    />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
+    <!-- main styles links -->
     <link rel="stylesheet" href="styles/index.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
+    <!-- main video container start -->
+
+    <!-- nav bar start -->
     <nav id="navEl" class="navbar navbar1 navbar-expand-lg fixed-top p-0">
       <a
         href="index.html"
         class="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
+        <!-- Logo: NOT lazy (important for first paint) -->
         <img
           src="imgs/logo-removebg-preview.png"
           alt="logo"
@@ -52,17 +59,17 @@
       >
         <span><i class="fa-solid fa-bars"></i></span>
       </button>
-      <div class="collapse navbar-collapse text-end" id="navbarCollapse">
+      <div class="collapse navbar-collapse text-ecnter" id="navbarCollapse">
         <ul class="navbar-nav ms-auto p-4 p-lg-0">
           <li>
-            <a id="HOME" href="index.html" class="nav-item nav-link active lh"
-              >Home</a
-            >
+            <a
+              id="HOME"
+              href="index.html"
+              class="nav-item nav-link active lh"
+            ></a>
           </li>
           <li>
-            <a id="ABOUT" href="about.html" class="nav-item nav-link lh"
-              >About</a
-            >
+            <a id="ABOUT" href="about.html" class="nav-item nav-link lh"></a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -73,13 +80,10 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
               data-bs-auto-close="outside"
-              >Services</a
-            >
+            ></a>
             <ul class="dropdown-menu">
               <li>
-                <a id="FINISHES" class="dropdown-item" href="finishes.html"
-                  >Finishes</a
-                >
+                <a id="FINISHES" class="dropdown-item" href="finishes.html"></a>
               </li>
               <li class="dropend">
                 <a
@@ -87,27 +91,24 @@
                   class="dropdown-item dropdown-toggle"
                   data-bs-toggle="dropdown"
                   href="#"
-                  >Exports</a
-                >
+                ></a>
                 <ul class="dropdown-menu">
                   <li>
                     <a
                       id="RAISED"
                       href="raised-floor.html"
                       class="dropdown-item"
-                      >Raised Floors</a
-                    >
+                    ></a>
                   </li>
                   <li>
                     <a
                       id="WOODEN"
                       href="wooden-work.html"
                       class="dropdown-item"
-                      >Wooden Work</a
-                    >
+                    ></a>
                   </li>
                   <li>
-                    <a id="LABS" href="labs.html" class="dropdown-item">Labs</a>
+                    <a id="LABS" href="labs.html" class="dropdown-item"></a>
                   </li>
                 </ul>
               </li>
@@ -116,137 +117,122 @@
                   id="GENREAL"
                   class="dropdown-item"
                   href="General-Contracting.html"
-                  >General Contracting</a
-                >
+                ></a>
               </li>
               <li>
-                <a id="OTHER" class="dropdown-item" href="other-work.html"
-                  >Other Work</a
-                >
+                <a id="OTHER" class="dropdown-item" href="other-work.html"></a>
               </li>
             </ul>
           </li>
           <li><button class="Contact-us-btn" id="langBtn">English</button></li>
           <li>
-            <a id="Contact" href="contact.html" class="nav-item Contact-us-btn"
-              >Contact</a
-            >
+            <a
+              id="Contact"
+              href="contact.html"
+              class="nav-item Contact-us-btn"
+            ></a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="hero section">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">Alnahda Studio</div>
-          <h2 id="WelcomeTo" class="hero-title">Welcome to</h2>
-          <span id="Alnahdaa" class="hero-brand">Alnahda</span>
-          <p id="WelcomeDe" class="hero-subtitle">
-            We build premium interiors, finishes, and engineering solutions that
-            last.
-          </p>
-          <div class="hero-actions">
-            <a id="ContactUs" href="contact.html" class="Contact-us-btn"
-              >Contact Us</a
-            >
-            <a href="other-work.html" class="hero-link">View Portfolio</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <div class="hero-card hero-card--large">
-            <img
-              class="lazy-img"
-              data-src="imgs/other/marble/light-on.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="hero-card">
-            <img
-              class="lazy-img"
-              data-src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="hero-card">
-            <img
-              class="lazy-img"
-              data-src="imgs/wood/doors/IMG-20230920-WA008.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+    <!-- nav bar end -->
+
+    <!-- main video container -->
+    <main>
+      <div class="video-container">
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="imgs/WhatsApp Image 2023-09-15 at 5.10.10 PM.jpeg"
+        >
+          <source
+            src="vids/Untitled video - Made with Clipchamp.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div id="video-style"></div>
+
+        <!-- content -->
+        <div class="content">
+          <h2 id="WelcomeTo"></h2>
+          <br />
+          <span id="Alnahdaa"></span>
+
+          <!-- This logo can be lazy (inside hero content) -->
+          <img
+            class="lazy-img"
+            data-src="imgs/logo-removebg-preview.png"
+            alt="logo"
+            width="200px"
+            height="200px"
+            loading="lazy"
+            decoding="async"
+          />
+
+          <h3 id="WelcomeDe" style="padding: 0px 12px"></h3>
+          <a id="ContactUs" href="contact.html" class="Contact-us-btn"></a>
         </div>
       </div>
-    </header>
+    </main>
 
-    <section class="stat-strip section">
-      <div class="container">
-        <div class="stat-grid">
-          <div class="stat-item">
-            <h3>20+</h3>
-            <p>Years Experience</p>
-          </div>
-          <div class="stat-item">
-            <h3>450+</h3>
-            <p>Completed Projects</p>
-          </div>
-          <div class="stat-item">
-            <h3>35</h3>
-            <p>Specialist Teams</p>
-          </div>
-          <div class="stat-item">
-            <h3>24/7</h3>
-            <p>Client Support</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- main video container end -->
 
-    <section id="AboutSection" class="about-split section">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-media">
-            <img
-              id="AboutImg"
-              class="lazy-img"
-              data-src="imgs/about/about us.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="about-content">
-            <div class="section-title text-start">
-              <h1 id="AboutTitle" class="display-5 mb-4"></h1>
+    <!-- About Start -->
+    <div
+      id="AboutSection"
+      class="container-fluid overflow-hidden my-5 px-lg-0 section"
+    >
+      <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img
+                id="AboutImg"
+                class="position-absolute img-fluid w-100 h-100 about-img lazy-img"
+                data-src="imgs/about/about us.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <p id="AboutDesc" class="mb-4"></p>
-            <div class="about-actions">
-              <a id="AboutDetails" href="about.html" class="Contact-us-btn"
-                >Details</a
-              >
-              <a id="AboutContact" href="contact.html" class="Contact-us-btn"
-                >Contact</a
-              >
+          </div>
+          <div
+            class="col-lg-6 about-text py-5 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div class="p-lg-5 pe-lg-0">
+              <div class="section-title text-start">
+                <h1 id="AboutTitle" class="display-5 mb-4"></h1>
+              </div>
+              <p id="AboutDesc" class="mb-4 pb-2"></p>
+              <a id="AboutDetails" href="about.html" class="Contact-us-btn"></a>
+              <a
+                id="AboutContact"
+                href="contact.html"
+                class="Contact-us-btn"
+              > Contact US</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- About End -->
 
-    <section id="ServicesSection" class="services section">
+    <hr />
+
+    <!-- Service Start -->
+    <div id="ServicesSection" class="container-xxl py-5 section">
       <div class="container">
         <div class="section-title text-center">
           <h1 id="ServicesTitle" class="display-5 mb-5"></h1>
           <div class="tran"></div>
         </div>
-        <div class="row g-4 services-grid">
+
+        <div class="row g-4">
+          <!-- Service Item -->
           <div class="col-md-6 col-lg-4">
             <div class="card service-item h-100">
               <img
@@ -261,9 +247,11 @@
               >
                 <h5 id="ServiceFinishesTitle" class="card-title"></h5>
                 <p id="ServiceFinishesDesc" class="card-text"></p>
-                <a id="ServiceFinishesLink" class="fw-medium service-link" href="finishes.html"
-                  >Details</a
-                >
+                <a
+                  id="ServiceFinishesLink"
+                  class="fw-medium"
+                  href="finishes.html"
+                ></a>
               </div>
             </div>
           </div>
@@ -282,9 +270,11 @@
               >
                 <h5 id="ServiceRaisedTitle" class="card-title"></h5>
                 <p id="ServiceRaisedDesc"></p>
-                <a id="ServiceRaisedLink" class="fw-medium service-link" href="raised-floor.html"
-                  >Details</a
-                >
+                <a
+                  id="ServiceRaisedLink"
+                  class="fw-medium"
+                  href="raised-floor.html"
+                ></a>
               </div>
             </div>
           </div>
@@ -303,9 +293,11 @@
               >
                 <h5 id="ServiceWoodTitle" class="card-title"></h5>
                 <p id="ServiceWoodDesc"></p>
-                <a id="ServiceWoodLink" class="fw-medium service-link" href="wooden-work.html"
-                  >Details</a
-                >
+                <a
+                  id="ServiceWoodLink"
+                  class="fw-medium"
+                  href="wooden-work.html"
+                ></a>
               </div>
             </div>
           </div>
@@ -323,9 +315,7 @@
                 class="card-body text-center d-flex flex-column justify-content-between"
               >
                 <h5 id="ServiceLabsTitle" class="card-title"></h5>
-                <a id="ServiceLabsLink" class="fw-medium service-link" href="labs.html"
-                  >Details</a
-                >
+                <a id="ServiceLabsLink" class="fw-medium" href="labs.html"></a>
               </div>
             </div>
           </div>
@@ -343,9 +333,11 @@
                 class="card-body text-center d-flex flex-column justify-content-between"
               >
                 <h5 id="ServiceContractTitle" class="card-title"></h5>
-                <a id="ServiceContractLink" class="fw-medium service-link" href="General-Contracting.html"
-                  >Details</a
-                >
+                <a
+                  id="ServiceContractLink"
+                  class="fw-medium"
+                  href="General-Contracting.html"
+                >  </a>
               </div>
             </div>
           </div>
@@ -362,66 +354,130 @@
               <div
                 class="card-body text-center d-flex flex-column justify-content-between"
               >
-                <h5 id="ServiceMarbleTitle" class="card-title"></h5>
-                <a id="ServiceMarbleLink" class="fw-medium service-link" href="other-work.html"
-                  >Details</a
-                >
+                <h5 id="ServiceMarbleTitle" class="card-title">     </h5>
+                <a
+                  id="ServiceMarbleLink"
+                  class="fw-medium"
+                  href="other-work.html"
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Service End -->
 
-    <section id="FeatureSection" class="feature-highlight section">
-      <div class="container">
-        <div class="feature-grid">
-          <div class="feature-copy">
-            <div class="section-title text-start">
-              <h1 id="FeatureTitle" class="display-5 mb-4"></h1>
-            </div>
-            <p id="FeatureDesc" class="mb-4"></p>
-            <div class="feature-list">
-              <div class="feature-pill">
-                <span id="FeatureCreative"></span>
-                <strong id="FeatureDesigners"></strong>
+    <hr />
+
+    <!-- Feature Start -->
+    <div
+      id="FeatureSection"
+      class="container-fluid bg-light overflow-hidden my-5 px-lg-0 section"
+    >
+      <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div
+            class="col-lg-6 feature-text py-5 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div class="p-lg-5 ps-lg-0">
+              <div class="section-title text-start">
+                <h1 id="FeatureTitle" class="display-5 mb-4"></h1>
               </div>
-              <div class="feature-pill">
-                <span id="FeatureFree"></span>
-                <strong id="FeatureConsultation"></strong>
-              </div>
-              <div class="feature-pill">
-                <span id="FeatureWork"></span>
-                <strong id="FeatureOnTime"></strong>
-              </div>
-              <div class="feature-pill">
-                <span id="FeatureCustomer"></span>
-                <strong id="FeatureSupport"></strong>
+              <p
+                id="FeatureDesc"
+                class="mb-4 pb-2"
+                style="text-align: justify"
+              ></p>
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="d-flex align-items-center feature-box">
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
+                    >
+                      <i class="fa fa-check fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p id="FeatureCreative" class="mb-2 text-start"></p>
+                      <h5 id="FeatureDesigners" class="mb-0"></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center feature-box">
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
+                    >
+                      <i class="fa fa-user-check fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p id="FeatureFree" class="mb-2 text-start"></p>
+                      <h5 id="FeatureConsultation" class="mb-0"></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center feature-box">
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
+                    >
+                      <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p id="FeatureWork" class="mb-2 text-start"></p>
+                      <h5 id="FeatureOnTime" class="mb-0"></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center feature-box">
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
+                    >
+                      <i class="fa fa-headphones fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p id="FeatureCustomer" class="mb-2 text-start"></p>
+                      <h5 id="FeatureSupport" class="mb-0"></h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="feature-media">
-            <img
-              id="FeatureImg"
-              class="feature-hero lazy-img"
-              data-src="imgs/about/cover.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
+
+          <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img
+                id="FeatureImg"
+                class="position-absolute img-fluid w-100 h-100 feature-img lazy-img"
+                data-src="imgs/about/cover.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Feature End -->
+    <hr />
 
-    <section id="ProjectsSection" class="projects section">
+    <!-- Projects Start -->
+    <div id="ProjectsSection" class="container-xxl py-5 section">
       <div class="container">
         <div class="section-title text-center">
           <h1 id="ProjectsTitle" class="display-5 mb-5"></h1>
           <div class="tran"></div>
         </div>
         <div class="row g-4 portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+          <!-- Item 1 -->
+          <div
+            class="col-lg-4 col-md-6 portfolio-item wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
             <div class="portfolio-card">
               <div class="portfolio-media">
                 <a
@@ -438,25 +494,31 @@
                 </a>
               </div>
               <div class="portfolio-body">
-                <span id="Project1Category" class="portfolio-tag">Marble</span>
-                <h5 id="Project1Title" class="portfolio-title">Lumi Stone</h5>
-                <a id="Project1More" class="portfolio-btn" href="other-work.html"
-                  >View More</a
-                >
+                <span id="Project1Category" class="portfolio-tag"></span>
+                <h5 id="Project1Title" class="portfolio-title"></h5>
+                <a
+                  id="Project1More"
+                  class="portfolio-btn"
+                  href="other-work.html"
+                ></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+          <!-- Item 2 -->
+          <div
+            class="col-lg-4 col-md-6 portfolio-item wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div class="portfolio-card">
               <div class="portfolio-media">
                 <a
-                  href="imgs/other/rest/1 (17).jpeg"
+                  href="imgs/other/rest/1 (18).jpeg"
                   data-lightbox="portfolio"
                 >
                   <img
                     class="img-fluid w-100 portfolio-img lazy-img"
-                    data-src="imgs/other/rest/1 (17).jpeg"
+                    data-src="imgs/other/rest/1 (18).jpeg"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -464,16 +526,22 @@
                 </a>
               </div>
               <div class="portfolio-body">
-                <span id="Project2Category" class="portfolio-tag">Finishes</span>
-                <h5 id="Project2Title" class="portfolio-title">Offices</h5>
-                <a id="Project2More" class="portfolio-btn" href="other-work.html"
-                  >View More</a
-                >
+                <span id="Project2Category" class="portfolio-tag"></span>
+                <h5 id="Project2Title" class="portfolio-title"></h5>
+                <a
+                  id="Project2More"
+                  class="portfolio-btn"
+                  href="other-work.html"
+                ></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+          <!-- Item 3 -->
+          <div
+            class="col-lg-4 col-md-6 portfolio-item wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <div class="portfolio-card">
               <div class="portfolio-media">
                 <a
@@ -490,118 +558,105 @@
                 </a>
               </div>
               <div class="portfolio-body">
-                <span id="Project3Category" class="portfolio-tag">Finishes</span>
-                <h5 id="Project3Title" class="portfolio-title">Bathrooms</h5>
-                <a id="Project3More" class="portfolio-btn" href="other-work.html"
-                  >View More</a
-                >
+                <span id="Project3Category" class="portfolio-tag"></span>
+                <h5 id="Project3Title" class="portfolio-title"></h5>
+                <a
+                  id="Project3More"
+                  class="portfolio-btn"
+                  href="other-work.html"
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Projects End -->
 
-    <section id="TeamSection" class="team section">
-      <div class="container">
-        <div class="section-title text-center">
-          <h1 id="TeamTitle" class="display-5 mb-5"></h1>
-          <div class="tran"></div>
+    <hr />
+    <!-- Team Start -->
+    <div id="TeamSection" class="container py-5 section">
+      <div class="section-title text-center">
+        <h1 id="TeamTitle" class="display-5 mb-5"></h1>
+        <div class="tran"></div>
+      </div>
+      <div class="row g-4 d-flex justify-content-center">
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img
+                id="TeamMember1Img"
+                class="img-fluid team-img lazy-img"
+                data-src="imgs/team/dr.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="team-social">
+                <a
+                  class="btn btn-square"
+                  href="https://www.facebook.com/amged.elbhiery"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-square"
+                  href="https://www.instagram.com/amgad_abd_elmohsen/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="text-center border border-5 border-light border-top-0 p-4"
+            >
+              <h5 id="TeamMember1Name" class="mb-0"></h5>
+            </div>
+          </div>
         </div>
-        <div class="row g-4 d-flex justify-content-center">
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  id="TeamMember1Img"
-                  class="img-fluid team-img lazy-img"
-                  data-src="imgs/team/dr.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="team-social">
-                  <a
-                    class="btn btn-square"
-                    href="https://www.facebook.com/amged.elbhiery"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square"
-                    href="https://www.instagram.com/amgad_abd_elmohsen/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center border border-5 border-light border-top-0 p-4">
-                <h5 id="TeamMember1Name" class="mb-0"></h5>
-              </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img
+                id="TeamMember2Img"
+                class="img-fluid team-img lazy-img"
+                data-src="imgs/team/lewa.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div
+              class="text-center border border-5 border-light border-top-0 p-4"
+            >
+              <h5 id="TeamMember2Name" class="mb-0"></h5>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  id="TeamMember2Img"
-                  class="img-fluid team-img lazy-img"
-                  data-src="imgs/team/lewa.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="team-social">
-                  <a
-                    class="btn btn-square"
-                    href="https://www.facebook.com/profile.php?id=61551346292977"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square"
-                    href="https://www.instagram.com/elnahda842/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center border border-5 border-light border-top-0 p-4">
-                <h5 id="TeamMember2Name" class="mb-0"></h5>
-              </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img
+                id="TeamMember3Img"
+                class="img-fluid team-img lazy-img"
+                data-src="imgs/team/ahmed saeed.jpeg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  id="TeamMember3Img"
-                  class="img-fluid team-img lazy-img"
-                  data-src="imgs/team/ahmed saeed.jpeg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="team-social">
-                  <a
-                    class="btn btn-square"
-                    href="https://www.facebook.com/profile.php?id=61551346292977"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square"
-                    href="https://www.instagram.com/elnahda842/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center border border-5 border-light border-top-0 p-4">
-                <h5 id="TeamMember3Name" class="mb-0"></h5>
-              </div>
+            <div
+              class="text-center border border-5 border-light border-top-0 p-4"
+            >
+              <h5 id="TeamMember3Name" class="mb-0"></h5>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Team End -->
 
+    <!-- Footer Start -->
     <div
       id="FooterSection"
       class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn section"
@@ -609,15 +664,15 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h4 id="FooterAddressTitle" class="text-light mb-4">Address</h4>
+            <h4 id="FooterAddressTitle" class="text-light mb-4"></h4>
             <p id="FooterAddress" class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i> Shebin El-Kom, Menoufia
+              <i class="fa fa-map-marker-alt me-3"></i>
             </p>
             <p id="FooterPhone" class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i> +201097117225
+              <i class="fa fa-phone-alt me-3"></i>
             </p>
             <p id="FooterEmail" class="mb-2">
-              <i class="fa fa-envelope me-3"></i> info@alnahda.info
+              <i class="fa fa-envelope me-3"></i>
             </p>
             <div class="d-flex pt-2">
               <a
@@ -633,34 +688,35 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h4 id="FooterServicesTitle" class="text-light mb-4">Services</h4>
-            <a id="FooterFinishes" class="btn btn-link" href="finishes.html"
-              >Finishes</a
-            >
-            <a id="FooterRaised" class="btn btn-link" href="raised-floor.html"
-              >Raised Floors</a
-            >
-            <a id="FooterWooden" class="btn btn-link" href="wooden-work.html"
-              >Wooden Work</a
-            >
-            <a id="FooterLabs" class="btn btn-link" href="labs.html">Labs</a>
+            <h4 id="FooterServicesTitle" class="text-light mb-4"></h4>
+            <a
+              id="FooterFinishes"
+              class="btn btn-link"
+              href="finishes.html"
+            ></a>
+            <a
+              id="FooterRaised"
+              class="btn btn-link"
+              href="raised-floor.html"
+            ></a>
+            <a
+              id="FooterWooden"
+              class="btn btn-link"
+              href="wooden-work.html"
+            ></a>
+            <a id="FooterLabs" class="btn btn-link" href="labs.html"></a>
             <a
               id="FooterContract"
               class="btn btn-link"
               href="General-Contracting.html"
-              >General Contracting</a
-            >
+            ></a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h4 id="FooterLinksTitle" class="text-light mb-4">Quick Links</h4>
-            <a id="FooterHome" class="btn btn-link" href="index.html">Home</a>
-            <a id="FooterAbout" class="btn btn-link" href="about.html">About</a>
-            <a id="FooterContact" class="btn btn-link" href="contact.html"
-              >Contact</a
-            >
-            <a id="FooterOther" class="btn btn-link" href="other-work.html"
-              >Other Work</a
-            >
+            <h4 id="FooterLinksTitle" class="text-light mb-4"></h4>
+            <a id="FooterHome" class="btn btn-link" href="index.html"></a>
+            <a id="FooterAbout" class="btn btn-link" href="about.html"></a>
+            <a id="FooterContact" class="btn btn-link" href="contact.html"></a>
+            <a id="FooterOther" class="btn btn-link" href="other-work.html"></a>
           </div>
           <div class="col-lg-3 col-md-6">
             <img
@@ -679,14 +735,13 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 mb-3 mb-md-0">
-              <span id="FooterCopy">(c) www.alnahda.info, All Rights Reserved.</span>
+              <span id="FooterCopy"></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <a id="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Footer End -->
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -697,15 +752,13 @@
         reset: false,
       });
     </script>
+    <a id="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
     <script src="javascript/main.js"></script>
   </body>
 </html>
-
-
-
