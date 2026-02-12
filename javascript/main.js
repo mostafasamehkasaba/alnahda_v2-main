@@ -1,10 +1,15 @@
 ﻿// ط§ظ„ظ„ط؛ط©
 let currentLang = "en";
 let translations = {};
+let swipers = [];
 
 try {
   const savedLang = localStorage.getItem("siteLang");
   if (savedLang) currentLang = savedLang;
+} catch (e) {}
+
+try {
+  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
 } catch (e) {}
 
 fetch("translations.json")
@@ -317,11 +322,73 @@ function setLanguage(lang) {
 
   // ط¶ط¨ط· ط§طھط¬ط§ظ‡ ط§ظ„طµظپط­ط©
   document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   document.body.dir = lang === "ar" ? "rtl" : "ltr";
 
   try {
     localStorage.setItem("siteLang", lang);
   } catch (e) {}
+
+  initSwipers();
+}
+
+function initSwipers() {
+  if (typeof Swiper === "undefined") return;
+
+  if (swipers.length) {
+    swipers.forEach((instance) => instance.destroy(true, true));
+    swipers = [];
+  }
+
+  const swiperEls = document.querySelectorAll(".mySwiper");
+  if (!swiperEls.length) return;
+
+  swiperEls.forEach((el) => {
+    el.querySelectorAll("img.lazy-img[data-src]").forEach((img) => {
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+      img.classList.add("loaded");
+    });
+
+    el.dir = document.documentElement.dir || "ltr";
+    const isContract = el.classList.contains("contract-swiper");
+    const baseConfig = {
+      loop: true,
+      spaceBetween: isContract ? 14 : 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: el.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: el.querySelector(".swiper-button-next"),
+        prevEl: el.querySelector(".swiper-button-prev"),
+      },
+      rtl: document.documentElement.dir === "rtl",
+      observer: true,
+      observeParents: true,
+    };
+
+    const instance = new Swiper(el, {
+      ...baseConfig,
+      breakpoints: isContract
+        ? {
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1100: { slidesPerView: 3 },
+          }
+        : {
+            0: { slidesPerView: 1 },
+            760: { slidesPerView: 2 },
+            1000: { slidesPerView: 3 },
+          },
+    });
+
+    swipers.push(instance);
+  });
 }
 
 // ط²ط±ط§ط± ط§ظ„طھط¨ط¯ظٹظ„
@@ -515,34 +582,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
   // 1) Swiper init (ط¨ط¹ط¯ DOM)
   // =========================
-  let swiper = null;
-
-  if (document.querySelector(".mySwiper") && typeof Swiper !== "undefined") {
-    swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 30,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        760: { slidesPerView: 2 },
-        1000: { slidesPerView: 3 },
-      },
-      rtl: document.documentElement.dir === "rtl",
-      observer: true,
-      observeParents: true,
-    });
-  }
+  initSwipers();
 
   // =========================
   // 2) Lazy images
@@ -564,7 +604,9 @@ document.addEventListener("DOMContentLoaded", () => {
     img.addEventListener(
       "load",
       () => {
-        if (swiper) swiper.update();
+        if (swipers.length) {
+          swipers.forEach((instance) => instance.update());
+        }
       },
       { once: true }
     );
