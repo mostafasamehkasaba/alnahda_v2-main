@@ -128,25 +128,41 @@
       <div class="container">
         <div class="raised-hero-grid">
           <div class="raised-hero-content">
-            <span class="raised-hero-tag">Raised Flooring</span>
+            <span id="RaisedHeroTag" class="raised-hero-tag">Raised Flooring</span>
             <h1 id="RaisedFloors" class="display-5"></h1>
             <p id="FloorsTitle" class="raised-hero-subtitle"></p>
             <div class="raised-hero-actions">
-              <a href="#raised-gallery" class="Contact-us-btn">View Gallery</a>
-              <a href="contact.html" class="Contact-us-btn">Request Quote</a>
+              <a
+                id="RaisedHeroGalleryBtn"
+                href="#raised-gallery"
+                class="Contact-us-btn"
+                >View Gallery</a
+              >
+              <a
+                id="RaisedHeroQuoteBtn"
+                href="contact.html"
+                class="Contact-us-btn"
+                >Request Quote</a
+              >
             </div>
             <div class="raised-hero-metrics">
               <div class="raised-metric">
                 <span class="raised-metric-number">12+</span>
-                <span class="raised-metric-label">Years Experience</span>
+                <span id="RaisedMetricYears" class="raised-metric-label"
+                  >Years Experience</span
+                >
               </div>
               <div class="raised-metric">
                 <span class="raised-metric-number">90+</span>
-                <span class="raised-metric-label">Sites Delivered</span>
+                <span id="RaisedMetricSites" class="raised-metric-label"
+                  >Sites Delivered</span
+                >
               </div>
               <div class="raised-metric">
                 <span class="raised-metric-number">24/7</span>
-                <span class="raised-metric-label">Support Coverage</span>
+                <span id="RaisedMetricSupport" class="raised-metric-label"
+                  >Support Coverage</span
+                >
               </div>
             </div>
           </div>
@@ -160,8 +176,8 @@
               decoding="async"
             />
             <div class="raised-hero-card-body">
-              <h4>Flexible Infrastructure</h4>
-              <p>
+              <h4 id="RaisedHeroCardTitle">Flexible Infrastructure</h4>
+              <p id="RaisedHeroCardDesc">
                 Adaptable flooring systems for data centers, labs, and offices
                 with fast cable access and maintenance.
               </p>
@@ -179,7 +195,7 @@
               <div class="section-title text-start">
                 <h2 id="Floors" class="display-5 mb-3"></h2>
               </div>
-              <p class="raised-section-desc">
+              <p id="RaisedSectionDesc" class="raised-section-desc">
                 Our raised floor systems are engineered for strength, airflow,
                 and easy maintenance. We plan layouts to optimize access panels,
                 underfloor services, and long-term performance.
@@ -187,15 +203,17 @@
               <div class="raised-feature-list">
                 <div class="raised-feature">
                   <i class="fa-solid fa-wind"></i>
-                  <span>Optimized airflow circulation</span>
+                  <span id="RaisedFeatureAirflow"
+                    >Optimized airflow circulation</span
+                  >
                 </div>
                 <div class="raised-feature">
                   <i class="fa-solid fa-cubes"></i>
-                  <span>Heavy-duty load capacity</span>
+                  <span id="RaisedFeatureLoad">Heavy-duty load capacity</span>
                 </div>
                 <div class="raised-feature">
                   <i class="fa-solid fa-screwdriver-wrench"></i>
-                  <span>Fast maintenance access</span>
+                  <span id="RaisedFeatureAccess">Fast maintenance access</span>
                 </div>
               </div>
             </div>
@@ -209,7 +227,7 @@
                 decoding="async"
               />
               <div class="raised-media-badge">
-                <span>Engineered for efficiency</span>
+                <span id="RaisedMediaBadge">Engineered for efficiency</span>
               </div>
             </div>
           </div>
@@ -308,8 +326,10 @@
       <section id="raised-gallery" class="raised-gallery section">
         <div class="container">
           <div class="section-title text-start">
-            <h2 class="display-5 mb-3">Installation Gallery</h2>
-            <p class="raised-section-desc">
+            <h2 id="RaisedGalleryTitle" class="display-5 mb-3">
+              Installation Gallery
+            </h2>
+            <p id="RaisedGalleryDesc" class="raised-section-desc">
               Explore installation details, airflow grilles, and access panels
               across recent projects.
             </p>
@@ -385,7 +405,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -402,11 +422,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>

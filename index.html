@@ -138,87 +138,144 @@
 
     <!-- nav bar end -->
 
-    <!-- main video container -->
+    <!-- hero start -->
     <main>
-      <div class="video-container">
-        <video
-          id="background-video"
-          autoplay
-          loop
-          muted
-          poster="imgs/WhatsApp Image 2023-09-15 at 5.10.10 PM.jpeg"
-        >
-          <source
-            src="vids/Untitled video - Made with Clipchamp.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div id="video-style"></div>
+      <section class="video-container hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+          <div class="content hero-copy">
+            <span id="WelcomeTo" class="hero-eyebrow"></span>
+            <h1 class="hero-title">
+              <span id="Alnahdaa"></span>
+            </h1>
+            <p id="WelcomeDe" class="hero-desc"></p>
+            <div class="hero-actions">
+              <a
+                id="ContactUs"
+                href="contact.html"
+                class="Contact-us-btn hero-btn"
+              ></a>
+            </div>
+            <div class="hero-divider"></div>
+            <div class="hero-icons" aria-hidden="true">
+              <span class="hero-icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </span>
+              <span class="hero-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </span>
+              <span class="hero-icon">
+                <i class="fa-solid fa-city"></i>
+              </span>
+            </div>
+          </div>
 
-        <!-- content -->
-        <div class="content">
-          <h2 id="WelcomeTo"></h2>
-          <br />
-          <span id="Alnahdaa"></span>
-
-          <!-- This logo can be lazy (inside hero content) -->
-          <img
-            class="lazy-img"
-            data-src="imgs/logo-removebg-preview.png"
-            alt="logo"
-            width="200px"
-            height="200px"
-            loading="lazy"
-            decoding="async"
-          />
-
-          <h3 id="WelcomeDe" style="padding: 0px 12px"></h3>
-          <a id="ContactUs" href="contact.html" class="Contact-us-btn"></a>
+          <div class="hero-visual">
+            <div class="hero-image-stack">
+              <div class="hero-image hero-image-main">
+                <img
+                  src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
+                  alt="Interior finishes project"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="hero-image hero-image-secondary">
+                <img
+                  src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                  alt="Raised floor installation"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hero-image hero-image-tertiary">
+                <img
+                  src="imgs/wood/doors/IMG-20230920-WA008.jpg"
+                  alt="Wooden doors craftsmanship"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hero-stamp">
+                <img
+                  src="imgs/logo-removebg-preview.png"
+                  alt="Al-nahda logo"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
-    <!-- main video container end -->
+    <!-- hero end -->
 
     <!-- About Start -->
-    <div
-      id="AboutSection"
-      class="container-fluid overflow-hidden my-5 px-lg-0 section"
-    >
-      <div class="container about px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
-            <div class="position-relative h-100">
+    <section id="AboutSection" class="container-fluid home-about section">
+      <div class="home-about-bg"></div>
+      <div class="container">
+        <div class="home-about-grid">
+          <div class="home-about-copy">
+            <div class="home-about-kicker">
+              <span class="home-about-kicker-line"></span>
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h2 id="AboutTitle" class="home-about-title"></h2>
+            <p id="AboutDesc" class="home-about-desc"></p>
+            <div class="home-about-actions">
+              <a id="AboutDetails" href="about.html" class="Contact-us-btn"></a>
+              <a
+                id="AboutContact"
+                href="contact.html"
+                class="Contact-us-btn"
+              ></a>
+            </div>
+            <div class="home-about-icons" aria-hidden="true">
+              <span class="home-about-icon">
+                <i class="fa-solid fa-award"></i>
+              </span>
+              <span class="home-about-icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </span>
+              <span class="home-about-icon">
+                <i class="fa-solid fa-swatchbook"></i>
+              </span>
+            </div>
+          </div>
+          <div class="home-about-media">
+            <div class="home-about-figure">
               <img
                 id="AboutImg"
-                class="position-absolute img-fluid w-100 h-100 about-img lazy-img"
+                class="home-about-img lazy-img"
+                src="imgs/about/about us.jpg"
                 data-src="imgs/about/about us.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
               />
             </div>
-          </div>
-          <div
-            class="col-lg-6 about-text py-5 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="p-lg-5 pe-lg-0">
-              <div class="section-title text-start">
-                <h1 id="AboutTitle" class="display-5 mb-4"></h1>
+            <div class="home-about-float">
+              <img
+                class="home-about-img-sm lazy-img"
+                src="imgs/about/cover.jpg"
+                data-src="imgs/about/cover.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="home-about-stamp" aria-hidden="true">
+                <i class="fa-solid fa-compass-drafting"></i>
               </div>
-              <p id="AboutDesc" class="mb-4 pb-2"></p>
-              <a id="AboutDetails" href="about.html" class="Contact-us-btn"></a>
-              <a
-                id="AboutContact"
-                href="contact.html"
-                class="Contact-us-btn"
-              > Contact US</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- About End -->
 
     <hr />
@@ -237,7 +294,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
+                 src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
+                 data-src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -260,7 +318,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                 src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
+                 data-src="imgs/raisedfloor/IMG-20230920-WA005.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -283,7 +342,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/wood/doors/IMG-20230920-WA008.jpg"
+                 src="imgs/wood/doors/IMG-20230920-WA008.jpg"
+                 data-src="imgs/wood/doors/IMG-20230920-WA008.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -306,7 +366,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/labs/1 (4).jpeg"
+                 src="imgs/labs/1 (4).jpeg"
+                 data-src="imgs/labs/1 (4).jpeg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -324,7 +385,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154206.png"
+                 src="imgs/contracting/proj 3/Screenshot 2023-09-24 154206.png"
+                 data-src="imgs/contracting/proj 3/Screenshot 2023-09-24 154206.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -346,7 +408,8 @@
             <div class="card service-item h-100">
               <img
                 class="card-img-top lazy-img"
-                data-src="imgs/other/marble/light-off.jpg"
+                 src="imgs/other/marble/light-off.jpg"
+                 data-src="imgs/other/marble/light-off.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -371,97 +434,75 @@
     <hr />
 
     <!-- Feature Start -->
-    <div
-      id="FeatureSection"
-      class="container-fluid bg-light overflow-hidden my-5 px-lg-0 section"
-    >
-      <div class="container feature px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <div
-            class="col-lg-6 feature-text py-5 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="p-lg-5 ps-lg-0">
-              <div class="section-title text-start">
-                <h1 id="FeatureTitle" class="display-5 mb-4"></h1>
-              </div>
-              <p
-                id="FeatureDesc"
-                class="mb-4 pb-2"
-                style="text-align: justify"
-              ></p>
-              <div class="row g-4">
-                <div class="col-6">
-                  <div class="d-flex align-items-center feature-box">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
-                    >
-                      <i class="fa fa-check fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p id="FeatureCreative" class="mb-2 text-start"></p>
-                      <h5 id="FeatureDesigners" class="mb-0"></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center feature-box">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
-                    >
-                      <i class="fa fa-user-check fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p id="FeatureFree" class="mb-2 text-start"></p>
-                      <h5 id="FeatureConsultation" class="mb-0"></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center feature-box">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
-                    >
-                      <i class="fa fa-drafting-compass fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p id="FeatureWork" class="mb-2 text-start"></p>
-                      <h5 id="FeatureOnTime" class="mb-0"></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center feature-box">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white icon-box"
-                    >
-                      <i class="fa fa-headphones fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p id="FeatureCustomer" class="mb-2 text-start"></p>
-                      <h5 id="FeatureSupport" class="mb-0"></h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <section id="FeatureSection" class="why-pro section">
+      <div class="why-pro-bg"></div>
+      <div class="container">
+        <div class="why-pro-grid">
+          <div class="why-pro-copy">
+            <div class="why-pro-kicker">
+              <span class="why-pro-line"></span>
+              <i class="fa-solid fa-star"></i>
             </div>
+            <h2 id="FeatureTitle" class="why-pro-title"></h2>
+            <p id="FeatureDesc" class="why-pro-desc"></p>
           </div>
-
-          <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
-            <div class="position-relative h-100">
+          <div class="why-pro-visual">
+            <div class="why-pro-image">
               <img
                 id="FeatureImg"
-                class="position-absolute img-fluid w-100 h-100 feature-img lazy-img"
+                class="why-pro-image-main lazy-img"
+                src="imgs/about/cover.jpg"
                 data-src="imgs/about/cover.jpg"
                 alt=""
                 loading="lazy"
                 decoding="async"
               />
+              <div class="why-pro-badge">
+                <i class="fa-solid fa-award"></i>
+              </div>
+            </div>
+            <div class="why-pro-cards">
+              <article class="why-pro-card">
+                <span class="why-pro-icon">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </span>
+                <div>
+                  <p id="FeatureCreative" class="why-pro-label"></p>
+                  <h5 id="FeatureDesigners" class="why-pro-text"></h5>
+                </div>
+              </article>
+              <article class="why-pro-card">
+                <span class="why-pro-icon">
+                  <i class="fa-solid fa-user-check"></i>
+                </span>
+                <div>
+                  <p id="FeatureFree" class="why-pro-label"></p>
+                  <h5 id="FeatureConsultation" class="why-pro-text"></h5>
+                </div>
+              </article>
+              <article class="why-pro-card">
+                <span class="why-pro-icon">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </span>
+                <div>
+                  <p id="FeatureWork" class="why-pro-label"></p>
+                  <h5 id="FeatureOnTime" class="why-pro-text"></h5>
+                </div>
+              </article>
+              <article class="why-pro-card">
+                <span class="why-pro-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </span>
+                <div>
+                  <p id="FeatureCustomer" class="why-pro-label"></p>
+                  <h5 id="FeatureSupport" class="why-pro-text"></h5>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Feature End -->
     <hr />
 
@@ -486,7 +527,8 @@
                 >
                   <img
                     class="img-fluid w-100 portfolio-img lazy-img"
-                    data-src="imgs/other/marble/light-on.jpg"
+                     src="imgs/other/marble/light-on.jpg"
+                     data-src="imgs/other/marble/light-on.jpg"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -518,7 +560,8 @@
                 >
                   <img
                     class="img-fluid w-100 portfolio-img lazy-img"
-                    data-src="imgs/other/rest/1 (18).jpeg"
+                     src="imgs/other/rest/1 (18).jpeg"
+                     data-src="imgs/other/rest/1 (18).jpeg"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -550,7 +593,8 @@
                 >
                   <img
                     class="img-fluid w-100 portfolio-img lazy-img"
-                    data-src="imgs/other/rest/1 (14).jpeg"
+                     src="imgs/other/rest/1 (14).jpeg"
+                     data-src="imgs/other/rest/1 (14).jpeg"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -587,7 +631,8 @@
               <img
                 id="TeamMember1Img"
                 class="img-fluid team-img lazy-img"
-                data-src="imgs/team/dr.png"
+                 src="imgs/team/dr.png"
+                 data-src="imgs/team/dr.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -619,7 +664,8 @@
               <img
                 id="TeamMember2Img"
                 class="img-fluid team-img lazy-img"
-                data-src="imgs/team/lewa.png"
+                 src="imgs/team/lewa.png"
+                 data-src="imgs/team/lewa.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -639,7 +685,8 @@
               <img
                 id="TeamMember3Img"
                 class="img-fluid team-img lazy-img"
-                data-src="imgs/team/ahmed saeed.jpeg"
+                 src="imgs/team/ahmed saeed.jpeg"
+                 data-src="imgs/team/ahmed saeed.jpeg"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -721,7 +768,8 @@
           <div class="col-lg-3 col-md-6">
             <img
               class="d-inline-block align-text-top lazy-img"
-              data-src="imgs/logo-removebg-preview.png"
+               src="imgs/logo-removebg-preview.png"
+               data-src="imgs/logo-removebg-preview.png"
               alt=""
               width="190"
               height="184"
@@ -762,3 +810,5 @@
     <script src="javascript/main.js"></script>
   </body>
 </html>
+
+

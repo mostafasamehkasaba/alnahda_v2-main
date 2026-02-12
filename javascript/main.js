@@ -2,6 +2,11 @@
 let currentLang = "en";
 let translations = {};
 
+try {
+  const savedLang = localStorage.getItem("siteLang");
+  if (savedLang) currentLang = savedLang;
+} catch (e) {}
+
 fetch("translations.json")
   .then((response) => response.json())
   .then((data) => {
@@ -128,24 +133,116 @@ function setLanguage(lang) {
 
   setText("PageAboutDE", translations[lang].PageAboutDE);
   setText("PageAboutH", translations[lang].PageAboutH);
+  setText("AboutHeroTag", translations[lang].AboutHeroTag);
+  setText("AboutStatYears", translations[lang].AboutStatYears);
+  setText("AboutStatProjects", translations[lang].AboutStatProjects);
+  setText("AboutStatClients", translations[lang].AboutStatClients);
+  setText("AboutHeroBadge", translations[lang].AboutHeroBadge);
+  setText("AboutStoryCard1Title", translations[lang].AboutStoryCard1Title);
+  setText("AboutStoryCard1Desc", translations[lang].AboutStoryCard1Desc);
+  setText("AboutStoryCard2Title", translations[lang].AboutStoryCard2Title);
+  setText("AboutStoryCard2Desc", translations[lang].AboutStoryCard2Desc);
+  setText("AboutValuesNote", translations[lang].AboutValuesNote);
+
+  setText("ContactHeroTitle", translations[lang].ContactHeroTitle);
+  setText("ContactSectionTitle", translations[lang].ContactSectionTitle);
+  setText("ContactAddress1", translations[lang].ContactAddress1);
+  setText("ContactAddress2", translations[lang].ContactAddress2);
+  setText("ContactAddress3", translations[lang].ContactAddress3);
+  setText("ContactPhone1", translations[lang].ContactPhone1);
+  setText("ContactPhone2", translations[lang].ContactPhone2);
 
   setText("Finishes", translations[lang].Finishes);
   setText("FinishesTitle", translations[lang].FinishesTitle);
   setText("PageFinishesTitle", translations[lang].PageFinishesTitle);
   setText("PageFinishesDesc", translations[lang].PageFinishesDesc);
+  setText("FinishesHeroTag", translations[lang].FinishesHeroTag);
+  setText("FinishesHeroGalleryBtn", translations[lang].FinishesHeroGalleryBtn);
+  setText("FinishesHeroContactBtn", translations[lang].FinishesHeroContactBtn);
+  setText("FinishesMetricYears", translations[lang].FinishesMetricYears);
+  setText("FinishesMetricSpaces", translations[lang].FinishesMetricSpaces);
+  setText("FinishesMetricSupport", translations[lang].FinishesMetricSupport);
+  setText("FinishesHeroCardTitle", translations[lang].FinishesHeroCardTitle);
+  setText("FinishesHeroCardDesc", translations[lang].FinishesHeroCardDesc);
+  setText("FinishesPillRetail", translations[lang].FinishesPillRetail);
+  setText("FinishesPillHealthcare", translations[lang].FinishesPillHealthcare);
+  setText("FinishesPillResidential", translations[lang].FinishesPillResidential);
+  setText("FinishesIntroOverlay", translations[lang].FinishesIntroOverlay);
+  setText("FinishesHighlightsTitle", translations[lang].FinishesHighlightsTitle);
+  setText("FinishesHighlightsDesc", translations[lang].FinishesHighlightsDesc);
+  setText("FinishesHighlight1Title", translations[lang].FinishesHighlight1Title);
+  setText("FinishesHighlight1Desc", translations[lang].FinishesHighlight1Desc);
+  setText("FinishesHighlight2Title", translations[lang].FinishesHighlight2Title);
+  setText("FinishesHighlight2Desc", translations[lang].FinishesHighlight2Desc);
+  setText("FinishesHighlight3Title", translations[lang].FinishesHighlight3Title);
+  setText("FinishesHighlight3Desc", translations[lang].FinishesHighlight3Desc);
+  setText("FinishesCarouselTitle", translations[lang].FinishesCarouselTitle);
+  setText("FinishesCarouselDesc", translations[lang].FinishesCarouselDesc);
+  setText("FinishesGalleryTitle", translations[lang].FinishesGalleryTitle);
+  setText("FinishesGalleryDesc", translations[lang].FinishesGalleryDesc);
 
   setText("Floors", translations[lang].Floors);
   setText("RaisedFloors", translations[lang].RaisedFloors);
   setText("FloorsTitle", translations[lang].FloorsTitle);
+  setText("RaisedHeroTag", translations[lang].RaisedHeroTag);
+  setText("RaisedHeroGalleryBtn", translations[lang].RaisedHeroGalleryBtn);
+  setText("RaisedHeroQuoteBtn", translations[lang].RaisedHeroQuoteBtn);
+  setText("RaisedMetricYears", translations[lang].RaisedMetricYears);
+  setText("RaisedMetricSites", translations[lang].RaisedMetricSites);
+  setText("RaisedMetricSupport", translations[lang].RaisedMetricSupport);
+  setText("RaisedHeroCardTitle", translations[lang].RaisedHeroCardTitle);
+  setText("RaisedHeroCardDesc", translations[lang].RaisedHeroCardDesc);
+  setText("RaisedSectionDesc", translations[lang].RaisedSectionDesc);
+  setText("RaisedFeatureAirflow", translations[lang].RaisedFeatureAirflow);
+  setText("RaisedFeatureLoad", translations[lang].RaisedFeatureLoad);
+  setText("RaisedFeatureAccess", translations[lang].RaisedFeatureAccess);
+  setText("RaisedMediaBadge", translations[lang].RaisedMediaBadge);
+  setText("RaisedGalleryTitle", translations[lang].RaisedGalleryTitle);
+  setText("RaisedGalleryDesc", translations[lang].RaisedGalleryDesc);
 
   setText("WoodenWork", translations[lang].WoodenWork);
   setText("WoodenWorkTitle", translations[lang].WoodenWorkTitle);
   setText("Woodendoors", translations[lang].Woodendoors);
   setText("Woodenbindings", translations[lang].Woodenbindings);
+  setText("WoodHeroTag", translations[lang].WoodHeroTag);
+  setText("WoodHeroDoorsBtn", translations[lang].WoodHeroDoorsBtn);
+  setText("WoodHeroBindingsBtn", translations[lang].WoodHeroBindingsBtn);
+  setText("WoodMetricYears", translations[lang].WoodMetricYears);
+  setText("WoodMetricDoors", translations[lang].WoodMetricDoors);
+  setText("WoodMetricSupport", translations[lang].WoodMetricSupport);
+  setText("WoodHeroCardTitle", translations[lang].WoodHeroCardTitle);
+  setText("WoodHeroCardDesc", translations[lang].WoodHeroCardDesc);
+  setText("WoodSectionDesc", translations[lang].WoodSectionDesc);
+  setText("WoodFeatureSolid", translations[lang].WoodFeatureSolid);
+  setText("WoodFeatureStains", translations[lang].WoodFeatureStains);
+  setText("WoodFeatureHardware", translations[lang].WoodFeatureHardware);
+  setText("WoodMediaBadge", translations[lang].WoodMediaBadge);
+  setText("WoodBindingsDesc", translations[lang].WoodBindingsDesc);
+  setText("WoodPillPanels", translations[lang].WoodPillPanels);
+  setText("WoodPillCabinetry", translations[lang].WoodPillCabinetry);
+  setText("WoodPillJoinery", translations[lang].WoodPillJoinery);
 
   setText("Lab", translations[lang].Lab);
   setText("Lab", translations[lang].Lab);
+  setText("Labs", translations[lang].Labs);
   setText("LabTitle", translations[lang].LabTitle);
+  setText("LabsHeroTag", translations[lang].LabsHeroTag);
+  setText("LabsHeroGalleryBtn", translations[lang].LabsHeroGalleryBtn);
+  setText("LabsHeroContactBtn", translations[lang].LabsHeroContactBtn);
+  setText("LabsMetricProjects", translations[lang].LabsMetricProjects);
+  setText("LabsMetricYears", translations[lang].LabsMetricYears);
+  setText("LabsMetricClients", translations[lang].LabsMetricClients);
+  setText("LabsHeroCardTitle", translations[lang].LabsHeroCardTitle);
+  setText("LabsHeroCardDesc", translations[lang].LabsHeroCardDesc);
+  setText("LabsSectionDesc", translations[lang].LabsSectionDesc);
+  setText("LabsFeatureSurface", translations[lang].LabsFeatureSurface);
+  setText("LabsFeatureVentilation", translations[lang].LabsFeatureVentilation);
+  setText("LabsFeatureSafety", translations[lang].LabsFeatureSafety);
+  setText("LabsMediaBadge", translations[lang].LabsMediaBadge);
+  setText("LabsHighlightsTitle", translations[lang].LabsHighlightsTitle);
+  setText("LabsHighlightsDesc", translations[lang].LabsHighlightsDesc);
+  setText("LabsGalleryTitle", translations[lang].LabsGalleryTitle);
+  setText("LabsGalleryDesc", translations[lang].LabsGalleryDesc);
 
   setText("General", translations[lang].General);
   setText("GeneralTitle", translations[lang].GeneralTitle);
@@ -157,15 +254,63 @@ function setLanguage(lang) {
   setText("Kom", translations[lang].Kom);
   setText("Qababat", translations[lang].Qababat);
   setText("Qababat", translations[lang].Qababat);
+  setText("Matatros", translations[lang].Matatros);
+  setText("ContractHeroTag", translations[lang].ContractHeroTag);
+  setText("ContractHeroProjectsBtn", translations[lang].ContractHeroProjectsBtn);
+  setText("ContractHeroQuoteBtn", translations[lang].ContractHeroQuoteBtn);
+  setText("ContractMetricProjects", translations[lang].ContractMetricProjects);
+  setText("ContractMetricYears", translations[lang].ContractMetricYears);
+  setText("ContractMetricClients", translations[lang].ContractMetricClients);
+  setText("ContractHeroCardTitle", translations[lang].ContractHeroCardTitle);
+  setText("ContractHeroCardDesc", translations[lang].ContractHeroCardDesc);
+  setText("ContractSectionTitle", translations[lang].ContractSectionTitle);
+  setText("ContractSectionDesc", translations[lang].ContractSectionDesc);
+  setText(
+    "ContractProjectFacultyLabel",
+    translations[lang].ContractProjectFacultyLabel,
+  );
+  setText(
+    "ContractProjectOutpatientLabel",
+    translations[lang].ContractProjectOutpatientLabel,
+  );
+  setText(
+    "ContractProjectLocationLabel",
+    translations[lang].ContractProjectLocationLabel,
+  );
+  setText("ContractProjectAqwazLabel", translations[lang].ContractProjectAqwazLabel);
+  setText(
+    "ContractProjectShawashnaLabel",
+    translations[lang].ContractProjectShawashnaLabel,
+  );
+  setText("ContractProjectKomLabel", translations[lang].ContractProjectKomLabel);
+  setText(
+    "ContractProjectQababatLabel",
+    translations[lang].ContractProjectQababatLabel,
+  );
+  setText(
+    "ContractProjectMatatrosLabel",
+    translations[lang].ContractProjectMatatrosLabel,
+  );
 
   setText("ServicesT", translations[lang].ServicesT);
   setText("Marble", translations[lang].Marble);
   setText("MatatrosTitle", translations[lang].MatatrosTitle);
-  setText("Lumi", translations[lang].Qababat);
+  setText("Lumi", translations[lang].Lumi);
   setText("LumiTitle", translations[lang].LumiTitle);
   setText("off", translations[lang].off);
   setText("on", translations[lang].on);
   setText("Other", translations[lang].Other);
+  setText("OtherHeroTag", translations[lang].OtherHeroTag);
+  setText("OtherHeroSubtitle", translations[lang].OtherHeroSubtitle);
+  setText("OtherHeroMarbleBtn", translations[lang].OtherHeroMarbleBtn);
+  setText("OtherHeroGalleryBtn", translations[lang].OtherHeroGalleryBtn);
+  setText("OtherHeroCardTitle", translations[lang].OtherHeroCardTitle);
+  setText("OtherHeroCardDesc", translations[lang].OtherHeroCardDesc);
+  setText("OtherMarbleBadge", translations[lang].OtherMarbleBadge);
+  setText("OtherPillPremium", translations[lang].OtherPillPremium);
+  setText("OtherPillEdges", translations[lang].OtherPillEdges);
+  setText("OtherPillLuxury", translations[lang].OtherPillLuxury);
+  setText("OtherGalleryDesc", translations[lang].OtherGalleryDesc);
 
   // ط²ط± ط§ظ„ظ„ط؛ط©
   setText("langBtn", translations[lang].button);
@@ -173,6 +318,10 @@ function setLanguage(lang) {
   // ط¶ط¨ط· ط§طھط¬ط§ظ‡ ط§ظ„طµظپط­ط©
   document.documentElement.lang = lang;
   document.body.dir = lang === "ar" ? "rtl" : "ltr";
+
+  try {
+    localStorage.setItem("siteLang", lang);
+  } catch (e) {}
 }
 
 // ط²ط±ط§ط± ط§ظ„طھط¨ط¯ظٹظ„
@@ -189,6 +338,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ".gallery-item",
     ".about-text",
     ".about-img",
+    ".home-about-copy",
+    ".home-about-figure",
+    ".why-pro-card",
+    ".why-pro-image",
     ".feature-img",
     ".content",
     ".contact-text",
@@ -290,17 +443,73 @@ if (gotopbtn) {
   });
 }
 
-//img-gallery
+// img-gallery (modal + carousel)
+let gallerySwiper = null;
+
+const buildGallerySlides = (images) =>
+  images
+    .map((img) => {
+      const src = img.getAttribute("data-src") || img.getAttribute("src") || "";
+      const alt = img.getAttribute("alt") || "gallery";
+      return `<div class="swiper-slide"><img src="${src}" alt="${alt}"></div>`;
+    })
+    .join("");
 
 document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("gallery-item")) {
-    const src = e.target.getAttribute("src");
-    document.querySelector(".modal-img").src = src;
-    const myModal = new bootstrap.Modal(
-      document.getElementById("gallery-modal"),
-    );
-    myModal.show();
+  const target = e.target;
+  if (!target.classList.contains("gallery-item")) return;
+
+  const modalEl = document.getElementById("gallery-modal");
+  if (!modalEl) return;
+
+  const galleryImages = Array.from(document.querySelectorAll(".gallery-item"));
+  const startIndex = Math.max(0, galleryImages.indexOf(target));
+
+  const swiperEl = modalEl.querySelector(".gallery-modal-swiper");
+  const swiperWrapper = swiperEl?.querySelector(".swiper-wrapper");
+
+  if (swiperWrapper) {
+    swiperWrapper.innerHTML = buildGallerySlides(galleryImages);
+  } else {
+    const fallbackImg = modalEl.querySelector(".modal-img");
+    if (fallbackImg) {
+      fallbackImg.src =
+        target.getAttribute("data-src") || target.getAttribute("src") || "";
+    }
   }
+
+  const myModal = new bootstrap.Modal(modalEl);
+  myModal.show();
+
+  if (swiperEl && typeof Swiper !== "undefined") {
+    gallerySwiper = new Swiper(swiperEl, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      initialSlide: startIndex,
+      pagination: {
+        el: swiperEl.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: swiperEl.querySelector(".swiper-button-next"),
+        prevEl: swiperEl.querySelector(".swiper-button-prev"),
+      },
+      rtl: document.documentElement.dir === "rtl",
+      observer: true,
+      observeParents: true,
+    });
+  }
+});
+
+document.addEventListener("hidden.bs.modal", (e) => {
+  if (e.target?.id !== "gallery-modal") return;
+  if (gallerySwiper) {
+    gallerySwiper.destroy(true, true);
+    gallerySwiper = null;
+  }
+  const wrapper = e.target.querySelector(".gallery-modal-swiper .swiper-wrapper");
+  if (wrapper) wrapper.innerHTML = "";
 });
 document.addEventListener("DOMContentLoaded", () => {
   // =========================
@@ -308,7 +517,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
   let swiper = null;
 
-  if (document.querySelector(".mySwiper")) {
+  if (document.querySelector(".mySwiper") && typeof Swiper !== "undefined") {
     swiper = new Swiper(".mySwiper", {
       loop: true,
       spaceBetween: 30,
@@ -343,6 +552,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!lazyImages.length) return;
 
   const loadImg = (img) => {
+    if (!img.dataset.src) {
+      img.classList.add("loaded");
+      return;
+    }
     img.src = img.dataset.src;
     img.removeAttribute("data-src");
     img.classList.add("loaded");
@@ -356,6 +569,18 @@ document.addEventListener("DOMContentLoaded", () => {
       { once: true }
     );
   };
+
+  const markLoaded = (img) => {
+    img.classList.add("loaded");
+  };
+
+  lazyImages.forEach((img) => {
+    if (img.complete && img.naturalWidth > 0) {
+      markLoaded(img);
+    } else {
+      img.addEventListener("load", () => markLoaded(img), { once: true });
+    }
+  });
 
   // fallback ظ„ظˆ ط§ظ„ظ…طھطµظپط­ ظ…ط´ ط¨ظٹط¯ط¹ظ… IntersectionObserver
   if (!("IntersectionObserver" in window)) {
@@ -378,6 +603,20 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   lazyImages.forEach((img) => imageObserver.observe(img));
+
+  const forceLoadRemaining = () => {
+    document
+      .querySelectorAll("img.lazy-img[data-src]")
+      .forEach((img) => loadImg(img));
+  };
+
+  window.addEventListener(
+    "load",
+    () => {
+      setTimeout(forceLoadRemaining, 1200);
+    },
+    { once: true }
+  );
 });
 
 

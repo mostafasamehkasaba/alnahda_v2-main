@@ -124,25 +124,43 @@
       <div class="container">
         <div class="labs-hero-grid">
           <div class="labs-hero-content">
-            <span class="labs-hero-tag">Laboratory Fit-Outs</span>
+            <span id="LabsHeroTag" class="labs-hero-tag"
+              >Laboratory Fit-Outs</span
+            >
             <h1 id="Labs" class="display-5"></h1>
             <p id="LabTitle" class="labs-hero-subtitle"></p>
             <div class="labs-hero-actions">
-              <a href="#labs-gallery" class="Contact-us-btn">View Gallery</a>
-              <a href="contact.html" class="Contact-us-btn">Contact</a>
+              <a
+                id="LabsHeroGalleryBtn"
+                href="#labs-gallery"
+                class="Contact-us-btn"
+                >View Gallery</a
+              >
+              <a
+                id="LabsHeroContactBtn"
+                href="contact.html"
+                class="Contact-us-btn"
+                >Contact</a
+              >
             </div>
             <div class="labs-hero-metrics">
               <div class="labs-metric">
                 <span class="labs-metric-number">50+</span>
-                <span class="labs-metric-label">Lab Projects</span>
+                <span id="LabsMetricProjects" class="labs-metric-label"
+                  >Lab Projects</span
+                >
               </div>
               <div class="labs-metric">
                 <span class="labs-metric-number">12+</span>
-                <span class="labs-metric-label">Years Expertise</span>
+                <span id="LabsMetricYears" class="labs-metric-label"
+                  >Years Expertise</span
+                >
               </div>
               <div class="labs-metric">
                 <span class="labs-metric-number">98%</span>
-                <span class="labs-metric-label">Client Satisfaction</span>
+                <span id="LabsMetricClients" class="labs-metric-label"
+                  >Client Satisfaction</span
+                >
               </div>
             </div>
           </div>
@@ -156,8 +174,8 @@
               decoding="async"
             />
             <div class="labs-hero-card-body">
-              <h4>Safe, Clean, Efficient</h4>
-              <p>
+              <h4 id="LabsHeroCardTitle">Safe, Clean, Efficient</h4>
+              <p id="LabsHeroCardDesc">
                 Purpose-built laboratory environments designed for safety,
                 workflow, and long-term durability.
               </p>
@@ -175,7 +193,7 @@
               <div class="section-title text-start">
                 <h2 id="Lab" class="display-5 mb-3"></h2>
               </div>
-              <p class="labs-section-desc">
+              <p id="LabsSectionDesc" class="labs-section-desc">
                 We deliver complete lab fit-outs with benches, utilities,
                 ventilation, and resilient finishes. Each space is engineered to
                 meet safety standards while maximizing workflow efficiency.
@@ -183,15 +201,17 @@
               <div class="labs-feature-list">
                 <div class="labs-feature">
                   <i class="fa-solid fa-vials"></i>
-                  <span>Chemical resistant surfaces</span>
+                  <span id="LabsFeatureSurface">Chemical resistant surfaces</span>
                 </div>
                 <div class="labs-feature">
                   <i class="fa-solid fa-fan"></i>
-                  <span>Ventilation and airflow planning</span>
+                  <span id="LabsFeatureVentilation"
+                    >Ventilation and airflow planning</span
+                  >
                 </div>
                 <div class="labs-feature">
                   <i class="fa-solid fa-shield-virus"></i>
-                  <span>Safety zoning & compliance</span>
+                  <span id="LabsFeatureSafety">Safety zoning & compliance</span>
                 </div>
               </div>
             </div>
@@ -205,7 +225,7 @@
                 decoding="async"
               />
               <div class="labs-media-badge">
-                <span>Precision lab planning</span>
+                <span id="LabsMediaBadge">Precision lab planning</span>
               </div>
             </div>
           </div>
@@ -215,8 +235,10 @@
       <section class="labs-slider-section section">
         <div class="container">
           <div class="section-title text-start">
-            <h2 class="display-5 mb-3">Project Highlights</h2>
-            <p class="labs-section-desc">
+            <h2 id="LabsHighlightsTitle" class="display-5 mb-3">
+              Project Highlights
+            </h2>
+            <p id="LabsHighlightsDesc" class="labs-section-desc">
               Recent laboratory installations featuring tailored cabinetry and
               technical services.
             </p>
@@ -279,8 +301,8 @@
       <section id="labs-gallery" class="labs-gallery section">
         <div class="container">
           <div class="section-title text-start">
-            <h2 class="display-5 mb-3">Labs Gallery</h2>
-            <p class="labs-section-desc">
+            <h2 id="LabsGalleryTitle" class="display-5 mb-3">Labs Gallery</h2>
+            <p id="LabsGalleryDesc" class="labs-section-desc">
               Explore lab finishes, workstation layouts, and material quality in
               detail.
             </p>
@@ -340,7 +362,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -357,11 +379,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -464,6 +487,7 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="javascript/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

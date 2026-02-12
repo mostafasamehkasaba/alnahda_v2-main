@@ -137,25 +137,41 @@
       <div class="container">
         <div class="wood-hero-grid">
           <div class="wood-hero-content">
-            <span class="wood-hero-tag">Crafted Woodwork</span>
+            <span id="WoodHeroTag" class="wood-hero-tag">Crafted Woodwork</span>
             <h1 id="WoodenWork" class="display-5"></h1>
             <p id="WoodenWorkTitle" class="wood-hero-subtitle"></p>
             <div class="wood-hero-actions">
-              <a href="#wood-doors" class="Contact-us-btn">Explore Doors</a>
-              <a href="#wood-bindings" class="Contact-us-btn">View Bindings</a>
+              <a
+                id="WoodHeroDoorsBtn"
+                href="#wood-doors"
+                class="Contact-us-btn"
+                >Explore Doors</a
+              >
+              <a
+                id="WoodHeroBindingsBtn"
+                href="#wood-bindings"
+                class="Contact-us-btn"
+                >View Bindings</a
+              >
             </div>
             <div class="wood-hero-metrics">
               <div class="wood-metric">
                 <span class="wood-metric-number">15+</span>
-                <span class="wood-metric-label">Years Experience</span>
+                <span id="WoodMetricYears" class="wood-metric-label"
+                  >Years Experience</span
+                >
               </div>
               <div class="wood-metric">
                 <span class="wood-metric-number">120+</span>
-                <span class="wood-metric-label">Custom Door Sets</span>
+                <span id="WoodMetricDoors" class="wood-metric-label"
+                  >Custom Door Sets</span
+                >
               </div>
               <div class="wood-metric">
                 <span class="wood-metric-number">24/7</span>
-                <span class="wood-metric-label">Project Support</span>
+                <span id="WoodMetricSupport" class="wood-metric-label"
+                  >Project Support</span
+                >
               </div>
             </div>
           </div>
@@ -169,8 +185,8 @@
               decoding="async"
             />
             <div class="wood-hero-card-body">
-              <h4>Signature Doors</h4>
-              <p>
+              <h4 id="WoodHeroCardTitle">Signature Doors</h4>
+              <p id="WoodHeroCardDesc">
                 Premium finishes, rich textures, and smooth hardware tailored
                 for modern interiors.
               </p>
@@ -188,7 +204,7 @@
               <div class="section-title text-start">
                 <h2 id="Woodendoors" class="display-5 mb-3"></h2>
               </div>
-              <p class="wood-section-desc">
+              <p id="WoodSectionDesc" class="wood-section-desc">
                 Crafted with precision and engineered to last. Our wooden doors
                 combine timeless design with modern security and acoustic
                 performance.
@@ -196,15 +212,17 @@
               <div class="wood-feature-list">
                 <div class="wood-feature">
                   <i class="fa-solid fa-tree"></i>
-                  <span>Solid hardwood selections</span>
+                  <span id="WoodFeatureSolid">Solid hardwood selections</span>
                 </div>
                 <div class="wood-feature">
                   <i class="fa-solid fa-swatchbook"></i>
-                  <span>Custom stains & finishes</span>
+                  <span id="WoodFeatureStains">Custom stains & finishes</span>
                 </div>
                 <div class="wood-feature">
                   <i class="fa-solid fa-shield-halved"></i>
-                  <span>Durable hardware & fittings</span>
+                  <span id="WoodFeatureHardware"
+                    >Durable hardware & fittings</span
+                  >
                 </div>
               </div>
             </div>
@@ -218,7 +236,7 @@
                 decoding="async"
               />
               <div class="wood-media-badge">
-                <span>Hand-finished craftsmanship</span>
+                <span id="WoodMediaBadge">Hand-finished craftsmanship</span>
               </div>
             </div>
           </div>
@@ -330,14 +348,14 @@
             <h2 id="Woodenbindings" class="display-5 mb-3"></h2>
           </div>
           <div class="wood-bindings-header">
-            <p class="wood-section-desc">
+            <p id="WoodBindingsDesc" class="wood-section-desc">
               Wall paneling, cabinetry, and bespoke wood trims crafted for
               elegant commercial and residential spaces.
             </p>
             <div class="wood-bindings-actions">
-              <span class="wood-pill">Wall Panels</span>
-              <span class="wood-pill">Cabinetry</span>
-              <span class="wood-pill">Custom Joinery</span>
+              <span id="WoodPillPanels" class="wood-pill">Wall Panels</span>
+              <span id="WoodPillCabinetry" class="wood-pill">Cabinetry</span>
+              <span id="WoodPillJoinery" class="wood-pill">Custom Joinery</span>
             </div>
           </div>
           <div class="wood-gallery-grid">
@@ -411,7 +429,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -428,11 +446,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>

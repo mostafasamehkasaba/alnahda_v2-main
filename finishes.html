@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -127,39 +127,58 @@
       <div class="container">
         <div class="finishes-hero-grid">
           <div class="finishes-hero-content">
-            <span class="finishes-hero-tag">Interior Finishes</span>
+            <span id="FinishesHeroTag" class="finishes-hero-tag"
+              >Interior Finishes</span
+            >
             <h1 id="FinishesTitle" class="display-5"></h1>
             <p id="PageFinishesTitle" class="finishes-hero-subtitle"></p>
             <div class="finishes-hero-actions">
-              <a href="#finishes-gallery" class="Contact-us-btn">View Gallery</a>
-              <a href="contact.html" class="Contact-us-btn">Contact</a>
+              <a
+                id="FinishesHeroGalleryBtn"
+                href="#finishes-gallery"
+                class="Contact-us-btn"
+                >View Gallery</a
+              >
+              <a
+                id="FinishesHeroContactBtn"
+                href="contact.html"
+                class="Contact-us-btn"
+                >Contact</a
+              >
             </div>
             <div class="finishes-hero-metrics">
               <div class="finishes-metric">
                 <span class="finishes-metric-number">15+</span>
-                <span class="finishes-metric-label">Years Experience</span>
+                <span id="FinishesMetricYears" class="finishes-metric-label"
+                  >Years Experience</span
+                >
               </div>
               <div class="finishes-metric">
                 <span class="finishes-metric-number">250+</span>
-                <span class="finishes-metric-label">Spaces Delivered</span>
+                <span id="FinishesMetricSpaces" class="finishes-metric-label"
+                  >Spaces Delivered</span
+                >
               </div>
               <div class="finishes-metric">
                 <span class="finishes-metric-number">24/7</span>
-                <span class="finishes-metric-label">Client Support</span>
+                <span id="FinishesMetricSupport" class="finishes-metric-label"
+                  >Client Support</span
+                >
               </div>
             </div>
           </div>
           <div class="finishes-hero-card">
             <img
               class="lazy-img"
-              data-src="imgs/finishes/proj 1/IMG-20230916-WA0014.jpg"
+               src="imgs/finishes/proj 1/IMG-20230916-WA0014.jpg"
+               data-src="imgs/finishes/proj 1/IMG-20230916-WA0014.jpg"
               alt="Signature finishes"
               loading="lazy"
               decoding="async"
             />
             <div class="finishes-hero-card-body">
-              <h4>Signature Finishes</h4>
-              <p>
+              <h4 id="FinishesHeroCardTitle">Signature Finishes</h4>
+              <p id="FinishesHeroCardDesc">
                 Warm textures, balanced lighting, and refined materials tailored
                 to your brand identity.
               </p>
@@ -179,9 +198,15 @@
               </div>
               <p id="PageFinishesDesc" class="finishes-desc"></p>
               <div class="finishes-pill-row">
-                <span class="finishes-pill">Retail & Offices</span>
-                <span class="finishes-pill">Healthcare & Labs</span>
-                <span class="finishes-pill">Residential Fit-outs</span>
+                <span id="FinishesPillRetail" class="finishes-pill"
+                  >Retail & Offices</span
+                >
+                <span id="FinishesPillHealthcare" class="finishes-pill"
+                  >Healthcare & Labs</span
+                >
+                <span id="FinishesPillResidential" class="finishes-pill"
+                  >Residential Fit-outs</span
+                >
               </div>
             </div>
             <div class="finishes-intro-modern-media">
@@ -195,9 +220,9 @@
                   decoding="async"
                 />
               </div>
-                            <div class="finishes-video-overlay">
+              <div class="finishes-video-overlay">
                 <i class="fa-solid fa-images"></i>
-                <span>Finishes highlight</span>
+                <span id="FinishesIntroOverlay">Finishes highlight</span>
               </div>
             </div>
           </div>
@@ -207,8 +232,10 @@
       <section class="finishes-highlights section">
         <div class="container-lg">
           <div class="section-title text-center">
-            <h2 class="display-5 mb-3">Our Finishing Edge</h2>
-            <p class="finishes-section-desc">
+            <h2 id="FinishesHighlightsTitle" class="display-5 mb-3">
+              Our Finishing Edge
+            </h2>
+            <p id="FinishesHighlightsDesc" class="finishes-section-desc">
               A full-service team that manages design, sourcing, and execution
               with consistent quality control.
             </p>
@@ -218,8 +245,8 @@
               <div class="finishes-highlight-icon">
                 <i class="fa-solid fa-layer-group"></i>
               </div>
-              <h5>Material Curation</h5>
-              <p>
+              <h5 id="FinishesHighlight1Title">Material Curation</h5>
+              <p id="FinishesHighlight1Desc">
                 We select finishes that balance durability, texture, and
                 elegance to elevate the space.
               </p>
@@ -228,8 +255,8 @@
               <div class="finishes-highlight-icon">
                 <i class="fa-solid fa-ruler-combined"></i>
               </div>
-              <h5>Precision Execution</h5>
-              <p>
+              <h5 id="FinishesHighlight2Title">Precision Execution</h5>
+              <p id="FinishesHighlight2Desc">
                 Dedicated teams ensure every detail from flooring to ceilings is
                 delivered on schedule.
               </p>
@@ -238,8 +265,8 @@
               <div class="finishes-highlight-icon">
                 <i class="fa-solid fa-people-group"></i>
               </div>
-              <h5>Trusted Partnerships</h5>
-              <p>
+              <h5 id="FinishesHighlight3Title">Trusted Partnerships</h5>
+              <p id="FinishesHighlight3Desc">
                 We collaborate with suppliers and craftsmen to maintain
                 consistent results across all projects.
               </p>
@@ -252,8 +279,8 @@
         <div class="container-lg">
           <div class="finishes-carousel-header">
             <div>
-              <h3 class="mb-2">Signature Spaces</h3>
-              <p class="finishes-section-desc">
+              <h3 id="FinishesCarouselTitle" class="mb-2">Signature Spaces</h3>
+              <p id="FinishesCarouselDesc" class="finishes-section-desc">
                 A curated selection of recent finishes across different styles.
               </p>
             </div>
@@ -263,7 +290,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA002.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA002.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA002.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -272,7 +300,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA001.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -281,7 +310,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA004.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA004.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA004.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -290,7 +320,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA005.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA005.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA005.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -299,7 +330,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA006.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA006.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA006.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -308,7 +340,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA007.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA007.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA007.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -317,7 +350,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA008.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA008.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA008.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -326,7 +360,8 @@
               <div class="swiper-slide">
                 <img
                   class="gallery-item lazy-img"
-                  data-src="imgs/finishes/proj 1/IMG-20230916-WA009.jpg"
+                   src="imgs/finishes/proj 1/IMG-20230916-WA009.jpg"
+                   data-src="imgs/finishes/proj 1/IMG-20230916-WA009.jpg"
                   alt="gallery"
                   loading="lazy"
                   decoding="async"
@@ -343,92 +378,106 @@
       <section id="finishes-gallery" class="finishes-gallery section">
         <div class="container-lg">
           <div class="section-title text-start">
-            <h2 class="display-5 mb-3">Finishes Gallery</h2>
-            <p class="finishes-section-desc">
+            <h2 id="FinishesGalleryTitle" class="display-5 mb-3">
+              Finishes Gallery
+            </h2>
+            <p id="FinishesGalleryDesc" class="finishes-section-desc">
               Browse detailed textures, lighting, and custom joinery closeups.
             </p>
           </div>
           <div class="finishes-gallery-grid">
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA003.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA003.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA003.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA0014.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA0014.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA0014.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA002.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA002.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA002.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA004.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA004.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA004.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA005.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA005.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA005.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA006.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA006.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA006.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA007.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA007.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA007.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 3/IMG-20230916-WA008.jpg"
+               src="imgs/finishes/proj 3/IMG-20230916-WA008.jpg"
+               data-src="imgs/finishes/proj 3/IMG-20230916-WA008.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 4/IMG-20230916-WA002.jpg"
+               src="imgs/finishes/proj 4/IMG-20230916-WA002.jpg"
+               data-src="imgs/finishes/proj 4/IMG-20230916-WA002.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 4/IMG-20230916-WA003.jpg"
+               src="imgs/finishes/proj 4/IMG-20230916-WA003.jpg"
+               data-src="imgs/finishes/proj 4/IMG-20230916-WA003.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 4/IMG-20230916-WA001.jpg"
+               src="imgs/finishes/proj 4/IMG-20230916-WA001.jpg"
+               data-src="imgs/finishes/proj 4/IMG-20230916-WA001.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
             />
             <img
               class="gallery-item lazy-img"
-              data-src="imgs/finishes/proj 4/IMG-20230916-WA005.jpg"
+               src="imgs/finishes/proj 4/IMG-20230916-WA005.jpg"
+               data-src="imgs/finishes/proj 4/IMG-20230916-WA005.jpg"
               alt="gallery"
               loading="lazy"
               decoding="async"
@@ -439,7 +488,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -456,11 +505,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -529,7 +579,8 @@
           <div class="col-lg-3 col-md-6">
             <img
               class="d-inline-block align-text-top lazy-img"
-              data-src="imgs/logo-removebg-preview.png"
+               src="imgs/logo-removebg-preview.png"
+               data-src="imgs/logo-removebg-preview.png"
               alt=""
               width="190"
               height="184"
@@ -571,6 +622,8 @@
     <script src="javascript/main.js"></script>
   </body>
 </html>
+
+
 
 
 

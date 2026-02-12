@@ -128,15 +128,22 @@
       <div class="container">
         <div class="other-hero-grid">
           <div class="other-hero-content">
-            <span class="other-hero-tag">Specialized Works</span>
+            <span id="OtherHeroTag" class="other-hero-tag">Specialized Works</span>
             <h1 id="ServicesT" class="display-5"></h1>
-            <p class="other-hero-subtitle">
+            <p id="OtherHeroSubtitle" class="other-hero-subtitle">
               Custom marble, lighting accents, and detailed finishes tailored to
               each project.
             </p>
             <div class="other-hero-actions">
-              <a href="#marble" class="Contact-us-btn">Marble</a>
-              <a href="#other-gallery" class="Contact-us-btn">View Gallery</a>
+              <a id="OtherHeroMarbleBtn" href="#marble" class="Contact-us-btn"
+                >Marble</a
+              >
+              <a
+                id="OtherHeroGalleryBtn"
+                href="#other-gallery"
+                class="Contact-us-btn"
+                >View Gallery</a
+              >
             </div>
           </div>
           <div class="other-hero-card">
@@ -149,8 +156,8 @@
               decoding="async"
             />
             <div class="other-hero-card-body">
-              <h4>Crafted Details</h4>
-              <p>
+              <h4 id="OtherHeroCardTitle">Crafted Details</h4>
+              <p id="OtherHeroCardDesc">
                 We blend precision, finish quality, and tailored materials for
                 spaces that feel premium and cohesive.
               </p>
@@ -173,7 +180,9 @@
                 loading="lazy"
                 decoding="async"
               />
-              <div class="other-media-badge">Marble Craftsmanship</div>
+              <div id="OtherMarbleBadge" class="other-media-badge">
+                Marble Craftsmanship
+              </div>
             </div>
             <div class="other-section-text">
               <div class="section-title text-start">
@@ -181,9 +190,15 @@
               </div>
               <p id="MatatrosTitle" class="other-section-desc"></p>
               <div class="other-pill-row">
-                <span class="other-pill">Premium Marble</span>
-                <span class="other-pill">Custom Edge Profiles</span>
-                <span class="other-pill">Luxury Finishes</span>
+                <span id="OtherPillPremium" class="other-pill"
+                  >Premium Marble</span
+                >
+                <span id="OtherPillEdges" class="other-pill"
+                  >Custom Edge Profiles</span
+                >
+                <span id="OtherPillLuxury" class="other-pill"
+                  >Luxury Finishes</span
+                >
               </div>
             </div>
           </div>
@@ -282,7 +297,7 @@
         <div class="container">
           <div class="section-title text-center">
             <h2 id="Other" class="display-5 mb-3"></h2>
-            <p class="other-section-desc">
+            <p id="OtherGalleryDesc" class="other-section-desc">
               A selection of custom interiors, hospitality, and bespoke fit-outs.
             </p>
             <div class="tran"></div>
@@ -421,7 +436,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -438,11 +453,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>

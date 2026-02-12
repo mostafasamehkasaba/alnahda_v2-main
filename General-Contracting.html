@@ -128,25 +128,43 @@
       <div class="container">
         <div class="contract-hero-grid">
           <div class="contract-hero-content">
-            <span class="contract-hero-tag">General Contracting</span>
+            <span id="ContractHeroTag" class="contract-hero-tag"
+              >General Contracting</span
+            >
             <h1 id="General" class="display-5"></h1>
             <p id="GeneralTitle" class="contract-hero-subtitle"></p>
             <div class="contract-hero-actions">
-              <a href="#contract-projects" class="Contact-us-btn">View Projects</a>
-              <a href="contact.html" class="Contact-us-btn">Request Quote</a>
+              <a
+                id="ContractHeroProjectsBtn"
+                href="#contract-projects"
+                class="Contact-us-btn"
+                >View Projects</a
+              >
+              <a
+                id="ContractHeroQuoteBtn"
+                href="contact.html"
+                class="Contact-us-btn"
+                >Request Quote</a
+              >
             </div>
             <div class="contract-hero-metrics">
               <div class="contract-metric">
                 <span class="contract-metric-number">200+</span>
-                <span class="contract-metric-label">Projects Delivered</span>
+                <span id="ContractMetricProjects" class="contract-metric-label"
+                  >Projects Delivered</span
+                >
               </div>
               <div class="contract-metric">
                 <span class="contract-metric-number">15+</span>
-                <span class="contract-metric-label">Years Experience</span>
+                <span id="ContractMetricYears" class="contract-metric-label"
+                  >Years Experience</span
+                >
               </div>
               <div class="contract-metric">
                 <span class="contract-metric-number">98%</span>
-                <span class="contract-metric-label">Client Satisfaction</span>
+                <span id="ContractMetricClients" class="contract-metric-label"
+                  >Client Satisfaction</span
+                >
               </div>
             </div>
           </div>
@@ -160,8 +178,8 @@
               decoding="async"
             />
             <div class="contract-hero-card-body">
-              <h4>End-to-End Delivery</h4>
-              <p>
+              <h4 id="ContractHeroCardTitle">End-to-End Delivery</h4>
+              <p id="ContractHeroCardDesc">
                 From planning and procurement to execution, we manage complex
                 builds with precision and accountability.
               </p>
@@ -175,8 +193,10 @@
       <section class="contract-section section">
         <div class="container">
           <div class="section-title text-center">
-            <h2 class="display-5 mb-3">Project Portfolio</h2>
-            <p class="contract-section-desc">
+            <h2 id="ContractSectionTitle" class="display-5 mb-3">
+              Project Portfolio
+            </h2>
+            <p id="ContractSectionDesc" class="contract-section-desc">
               Explore large-scale healthcare and public infrastructure projects
               delivered by Al-Nahda.
             </p>
@@ -186,7 +206,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Faculty"></h5>
-                <span>Faculty of Dentistry</span>
+                <span id="ContractProjectFacultyLabel">Faculty of Dentistry</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -240,7 +260,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Outpatient"></h5>
-                <span>Outpatient Clinics</span>
+                <span id="ContractProjectOutpatientLabel">Outpatient Clinics</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -294,7 +314,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="location"></h5>
-                <span>Medical Complex</span>
+                <span id="ContractProjectLocationLabel">Medical Complex</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -348,7 +368,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Aqwaz"></h5>
-                <span>Al-Aqwaz Hospital</span>
+                <span id="ContractProjectAqwazLabel">Al-Aqwaz Hospital</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -402,7 +422,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Shawashna"></h5>
-                <span>Shawashna Hospital</span>
+                <span id="ContractProjectShawashnaLabel">Shawashna Hospital</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -456,7 +476,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Kom"></h5>
-                <span>Kom Oshim Hospital</span>
+                <span id="ContractProjectKomLabel">Kom Oshim Hospital</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -510,7 +530,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Qababat"></h5>
-                <span>Al-Qababat Hospital</span>
+                <span id="ContractProjectQababatLabel">Al-Qababat Hospital</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -564,7 +584,7 @@
             <div class="contract-project-card">
               <div class="contract-project-header">
                 <h5 id="Matatros"></h5>
-                <span>Matatros Hospital</span>
+                <span id="ContractProjectMatatrosLabel">Matatros Hospital</span>
               </div>
               <div class="contract-project-slider swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -620,7 +640,7 @@
     </main>
 
     <div
-      class="modal fade"
+      class="modal fade gallery-modal"
       id="gallery-modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -637,11 +657,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <img
-              src="imgs/logo-removebg-preview.png"
-              class="modal-img"
-              alt="modal img"
-            />
+            <div class="gallery-modal-swiper swiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
